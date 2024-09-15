@@ -1,10 +1,14 @@
+// Sign Up Page
+
 import { View, Text, TextInput, StyleSheet, TouchableOpacity} from 'react-native'
 import React, { useEffect } from 'react'
 import { Colors } from './../../../constants/Colors';
-import { useNavigation } from 'expo-router'
+import { useNavigation, useRouter } from 'expo-router'
+import Ionicons from '@expo/vector-icons/Ionicons';
 
 export default function SignUp() {
   const navigation=useNavigation();
+  const router=useRouter();
 
   useEffect(()=>{
     navigation.setOptions({
@@ -15,15 +19,32 @@ export default function SignUp() {
     <View style={{
       padding: 25,
       paddingTop: 50,
+      backgroundColor: Colors.WHITE,
+      height: '100%',
     
     }}>
+      <TouchableOpacity onPress={()=> router.back()}>
+      <Ionicons name="arrow-back" size={24} color="black" />
+      </TouchableOpacity>
       <Text style={{
         fontFamily: "outfit-bold",
         fontSize: 30,
+        marginTop: 30,
       }}>Create New Account</Text>
 
       <View style={{
         marginTop: 50
+     }}>
+        <Text style={{
+          fontFamily: "outfit",
+        }}>Full Name</Text>
+        <TextInput 
+          style={styles.input}
+        placeholder='Enter Full Name' />
+     </View>
+
+      <View style={{
+        marginTop: 20
      }}>
         <Text style={{
           fontFamily: "outfit",
@@ -32,6 +53,7 @@ export default function SignUp() {
           style={styles.input}
         placeholder='Enter Email' />
      </View>
+
      <View style={{
         marginTop: 20
      }}>
@@ -43,6 +65,35 @@ export default function SignUp() {
           style={styles.input}
         placeholder='Enter Password' />
      </View>
+
+     <View style={{
+      padding:20,
+      backgroundColor: Colors.PRIMARY,
+      borderRadius: 15,
+      marginTop: 50
+     }}>
+          <Text style={{
+            color: Colors.WHITE,
+            textAlign: 'center',
+          }}>Create Account</Text>
+     </View>
+
+     <TouchableOpacity 
+      onPress={()=> router.replace('auth/sign-in')}
+       
+      style={{
+      padding:20,
+      backgroundColor: Colors.WHITE,
+      borderRadius: 15,
+      marginTop: 20,
+      borderWidth: 1,
+     }}>
+          <Text style={{
+            color: Colors.PRIMARY,
+            textAlign: 'center',
+          }}>Sign In</Text>
+     </TouchableOpacity>
+
     </View>
   )
 }

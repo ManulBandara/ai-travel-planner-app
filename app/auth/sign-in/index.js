@@ -1,8 +1,12 @@
+// Sign In Page
+
 import { View, Text, TextInput, StyleSheet, TouchableOpacity } from 'react-native'
 import React, { useEffect } from 'react'
 import { useNavigation, useRouter } from 'expo-router'
 import { Colors } from './../../../constants/Colors';
 import { useRouteNode } from 'expo-router/build/Route';
+import Ionicons from '@expo/vector-icons/Ionicons';
+
 
 export default function SignIn() {
   const navigation=useNavigation();
@@ -16,14 +20,18 @@ export default function SignIn() {
   return (
     <View style={{
       padding: 25,
-      paddingTop: 80,
+      paddingTop: 40,
       backgroundColor: Colors.WHITE,
       height: '100%'
     }}>
-     <Text style={{
+      <TouchableOpacity onPress={()=> router.back()}>
+      <Ionicons name="arrow-back" size={24} color="black" />
+      </TouchableOpacity>
+      <Text style={{
       fontFamily: "outfit-bold",
       fontSize: 30,
-     }}>Let's Sign You In</Text>
+      marginTop: 30,
+      }}>Let's Sign You In</Text>
 
       <Text style={{
       fontFamily: "outfit",
@@ -60,6 +68,9 @@ export default function SignIn() {
           style={styles.input}
         placeholder='Enter Password' />
      </View>
+
+
+{/* Sign in button */}
 
      <View style={{
       padding:20,
