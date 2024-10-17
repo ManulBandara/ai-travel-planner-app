@@ -5,6 +5,9 @@ import React, { useEffect } from 'react'
 import { Colors } from './../../../constants/Colors';
 import { useNavigation, useRouter } from 'expo-router'
 import Ionicons from '@expo/vector-icons/Ionicons';
+import { createUserWithEmailAndPassword } from 'firebase/auth';
+import {auth} from './../../../configs/FirebaseConfig'
+
 
 export default function SignUp() {
   const navigation=useNavigation();
@@ -14,7 +17,25 @@ export default function SignUp() {
     navigation.setOptions({
       headerShown: false
     })
-  },[])
+  },[]);
+
+
+  const OnCreateAccount=()=>{
+    createUserWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed up 
+    const user = userCredential.user;
+    console.log(user);
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    console.log(errorMessage,errorCode);
+    // ..
+  });
+  }
+
   return (
     <View style={{
       padding: 25,
