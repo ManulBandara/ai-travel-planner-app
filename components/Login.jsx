@@ -33,7 +33,8 @@ export default function login() {
             textAlign: "center",
             fontSize: 17,
             color: Colors.GRAY,
-            marginTop: 20,
+            marginTop: 10,
+            marginBottom: -35,
           }}
         >
           Step into a world of adventure with AI insights tailored to your
