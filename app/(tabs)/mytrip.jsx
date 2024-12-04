@@ -2,6 +2,7 @@ import { View, Text } from 'react-native'
 import React from 'react'
 import { Colors } from './../../constants/Colors'
 import Ionicons from "@expo/vector-icons/Ionicons";
+import StartNewTripCard from './../../components/MyTrips/StartNewTripcard';
 import { useState } from 'react';
 export default function MyTrip() {
   
@@ -36,10 +37,10 @@ export default function MyTrip() {
 
 
 
-      {/* {userTrips?.length==0?
+      {userTrips?.length==0?
         <StartNewTripCard/>
         :null
-      } */}
+      }
     </View>
   );
 }
