@@ -1,13 +1,13 @@
-// screens/SearchPlace.js
 import React, { useEffect, useState } from "react";
 import { View, Text, FlatList, TouchableOpacity } from "react-native";
-import { useNavigation } from "expo-router";
+import { useNavigation, useRouter } from "expo-router"; // Import useRouter for navigation
 import { Colors } from "./../../constants/Colors";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { SelectTravelerList } from "./../../constants/Options"; // Options for travelers
 
 export default function SearchPlace() {
   const navigation = useNavigation();
+  const router = useRouter(); // Initialize router for navigation
   const [selectedOption, setSelectedOption] = useState(null);
 
   useEffect(() => {
@@ -26,8 +26,8 @@ export default function SearchPlace() {
 
   const handleNextButtonPress = () => {
     if (selectedOption) {
-      // Navigate to the next screen (you can change the destination here)
-      navigation.navigate("NextPage"); // Adjust the name of the next screen
+      // Navigate to the next screen
+      router.push("/create-trip/select-dates"); // Change the route as per your structure
     } else {
       alert("Please select a travel option");
     }
@@ -71,7 +71,7 @@ export default function SearchPlace() {
 
       {/* Next Button */}
       <TouchableOpacity
-        onPress={handleNextButtonPress}
+        onPress={handleNextButtonPress} // Call the function on button press
         style={{
           padding: 15,
           backgroundColor: selectedOption ? Colors.PRIMARY : "#d3d3d3",
@@ -153,5 +153,5 @@ function getSelectedColor(label) {
       return "#1E90FF"; // Blue for Friends
     default:
       return "#888";
-  }
+  }z
 }
