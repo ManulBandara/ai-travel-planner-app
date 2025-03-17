@@ -1,30 +1,119 @@
-import React from "react";
-import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import React, { useState } from "react";
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  StyleSheet,
+  Animated,
+  Easing,
+} from "react-native";
 import { Colors } from "./../../constants/Colors";
-import Ionicons from "@expo/vector-icons/Ionicons";
+import { Calendar, LocaleConfig } from "react-native-calendars";
 import { useRouter } from "expo-router";
+import { MaterialIcons } from "@expo/vector-icons"; // Import icons from Expo
 
 export default function SelectDates() {
-  const router = useRouter(); // Hook for navigation
+  const router = useRouter();
+  const [selectedDates, setSelectedDates] = useState({});
+  const [startDate, setStartDate] = useState(null);
+  const [endDate, setEndDate] = useState(null);
+  const [fadeAnim] = useState(new Animated.Value(0)); // Animation for fade-in effect
 
-  // Function to handle "Next" button click
+  // Fade-in animation when the component mounts
+  React.useEffect(() => {
+    Animated.timing(fadeAnim, {
+      toValue: 1,
+      duration: 1000,
+      easing: Easing.ease,
+      useNativeDriver: true,
+    }).start();
+  }, []);
+
+  const handleDayPress = (day) => {
+    if (!startDate || (startDate && endDate)) {
+      setStartDate(day.dateString);
+      setEndDate(null);
+      setSelectedDates({
+        [day.dateString]: {
+          selected: true,
+          startingDay: true,
+          color: Colors.PRIMARY,
+        },
+      });
+    } else {
+      setEndDate(day.dateString);
+      const range = getDateRange(startDate, day.dateString);
+      setSelectedDates(range);
+    }
+  };
+
+  const getDateRange = (start, end) => {
+    const range = {};
+    let currentDate = new Date(start);
+    const endDate = new Date(end);
+
+    while (currentDate <= endDate) {
+      const dateString = currentDate.toISOString().split("T")[0];
+      range[dateString] = {
+        selected: true,
+        color: Colors.PRIMARY,
+        textColor: Colors.WHITE,
+      };
+      if (dateString === start) {
+        range[dateString].startingDay = true;
+      }
+      if (dateString === end) {
+        range[dateString].endingDay = true;
+      }
+      currentDate.setDate(currentDate.getDate() + 1);
+    }
+
+    return range;
+  };
+
   const handleNext = () => {
-    // Navigate to the next page (adjust path as needed)
-    router.push("/create-trip/select-budget");
+    if (startDate && endDate) {
+      router.push({
+        pathname: "/create-trip/select-budget",
+        params: { startDate, endDate },
+      });
+    } else {
+      alert("Please select a valid date range.");
+    }
   };
 
   return (
-    <View style={styles.container}>
+    
+    <Animated.View style={[styles.container, { opacity: fadeAnim }]}>
       {/* Header */}
       <Text style={styles.header}>Select Travel Dates</Text>
 
-      {/* Calendar Placeholder */}
+      {/* Calendar */}
       <View style={styles.calendarContainer}>
-        <Ionicons name="calendar-outline" size={60} color={Colors.PRIMARY} />
-        <Text style={styles.calendarPlaceholderText}>
-          Calendar will be displayed here
-        </Text>
+        <Calendar
+          onDayPress={handleDayPress}
+          markedDates={selectedDates}
+          markingType="period"
+          theme={{
+            selectedDayBackgroundColor: Colors.PRIMARY,
+            todayTextColor: Colors.PRIMARY,
+            arrowColor: Colors.PRIMARY,
+            textDayFontFamily: "outfit-medium",
+            textMonthFontFamily: "outfit-bold",
+            textDayHeaderFontFamily: "outfit-medium",
+          }}
+        />
       </View>
+
+      {/* Selected Dates Display */}
+      {startDate && endDate && (
+        <View style={styles.selectedDatesContainer}>
+          <MaterialIcons name="date-range" size={24} color={Colors.PRIMARY} />
+          <Text style={styles.selectedDatesText}>
+            {startDate} to {endDate}
+          </Text>
+        </View>
+      )}
 
       {/* Instructions */}
       <Text style={styles.instructions}>
@@ -34,8 +123,9 @@ export default function SelectDates() {
       {/* Next Button */}
       <TouchableOpacity style={styles.nextButton} onPress={handleNext}>
         <Text style={styles.nextButtonText}>Next</Text>
+        <MaterialIcons name="arrow-forward" size={24} color={Colors.WHITE} />
       </TouchableOpacity>
-    </View>
+    </Animated.View>
   );
 }
 
@@ -48,43 +138,59 @@ const styles = StyleSheet.create({
   },
   header: {
     fontFamily: "outfit-bold",
-    fontSize: 30,
+    fontSize: 32,
     textAlign: "center",
     color: Colors.DARK,
-    marginBottom: 40,
+    marginBottom: 20,
+    letterSpacing: 1,
   },
   calendarContainer: {
-    height: 300,
     borderRadius: 20,
-    borderWidth: 2,
-    borderColor: Colors.PRIMARY_LIGHT,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#f9f9f9",
+    overflow: "hidden",
+    marginBottom: 20,
+    elevation: 5, // Add shadow for Android
+    shadowColor: "#000", // Add shadow for iOS
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 5,
   },
-  calendarPlaceholderText: {
+  selectedDatesContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    marginVertical: 10,
+  },
+  selectedDatesText: {
     fontFamily: "outfit-medium",
     fontSize: 18,
-    color: "#888",
-    marginTop: 15,
+    color: Colors.DARK,
+    marginLeft: 10,
   },
   instructions: {
     fontFamily: "outfit-medium",
-    fontSize: 18,
+    fontSize: 16,
     color: "#777",
     textAlign: "center",
-    marginTop: 30,
+    marginTop: 10,
   },
   nextButton: {
+    flexDirection: "row",
     padding: 15,
     backgroundColor: Colors.PRIMARY,
     borderRadius: 15,
     alignItems: "center",
-    marginTop: 40,
+    justifyContent: "center",
+    marginTop: 20,
+    elevation: 5, // Add shadow for Android
+    shadowColor: "#000", // Add shadow for iOS
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 5,
   },
   nextButtonText: {
     color: Colors.WHITE,
     fontFamily: "outfit-medium",
     fontSize: 18,
+    marginRight: 10,
   },
 });
