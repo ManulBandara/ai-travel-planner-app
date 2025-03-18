@@ -180,7 +180,7 @@ const styles = StyleSheet.create({
     color: "#333",
   },
   addButton: {
-    backgroundColor: "black",
+    backgroundColor: "#0478A7",
     padding: 12,
     borderRadius: 10,
     marginLeft: 10,
@@ -231,7 +231,7 @@ const styles = StyleSheet.create({
   },
   nextButton: {
     padding: 15,
-    backgroundColor: "black",
+    backgroundColor: "#0478A7",
     borderRadius: 15,
     alignItems: "center",
     marginTop: 20,

@@ -5,8 +5,11 @@ import {
   FlatList,
   StyleSheet,
   ActivityIndicator,
+  TouchableOpacity,
+  Linking,
   ImageBackground,
 } from "react-native";
+import { LinearGradient } from "expo-linear-gradient";
 import { getRecommendations } from "../../configs/api";
 import { auth, db } from "../../configs/FirebaseConfig";
 import { doc, getDoc } from "firebase/firestore";
@@ -34,7 +37,7 @@ export default function Recommendations() {
       const userData = userSnap.data();
       const requestData = {
         activities: userData.preferences || [],
-        travelers_type: "Solo", // Change as per user selection
+        travelers_type: "Solo",
         travel_date: "Best time to visit",
         budget_category: userData.budget || "Moderate",
       };
@@ -48,91 +51,83 @@ export default function Recommendations() {
   }, []);
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.header}>🌍 Recommended Destinations</Text>
+    <LinearGradient colors={["#4facfe", "#00f2fe"]} style={styles.container}>
+      <Text style={styles.header}>Recommended Destinations</Text>
       {loading ? (
-        <ActivityIndicator size="large" color="#3498db" style={styles.loader} />
+        <ActivityIndicator size="large" color="#fff" />
       ) : recommendations.length > 0 ? (
         <FlatList
           data={recommendations}
           keyExtractor={(item, index) => index.toString()}
           renderItem={({ item }) => (
             <View style={styles.card}>
-              <ImageBackground
-                source={{ uri: "https://source.unsplash.com/400x300/?travel" }}
-                style={styles.image}
-                imageStyle={{ borderRadius: 10 }}
+              <Text style={styles.title}>{item.Destination}</Text>
+              <Text style={styles.detail}>Category: {item.Category}</Text>
+              <Text style={styles.detail}>Budget: ${item.Budget}</Text>
+              <Text style={styles.detail}>Duration: {item.Duration}</Text>
+              <Text style={styles.accommodations}>
+                Nearby Stay: {item.Accommodations}
+              </Text>
+              <TouchableOpacity
+                style={styles.button}
+                onPress={() =>
+                  Linking.openURL(
+                    `https://www.booking.com/searchresults.html?ss=${item.Destination}`
+                  )
+                }
               >
-                <View style={styles.overlay}>
-                  <Text style={styles.title}>{item.Destination} 🏝️</Text>
-                  <Text style={styles.details}>📍 {item.Category}</Text>
-                  <Text style={styles.details}>💰 Budget: ${item.Budget}</Text>
-                  <Text style={styles.details}>
-                    ⏳ Duration: {item.Duration}
-                  </Text>
-                </View>
-              </ImageBackground>
+                <Text style={styles.buttonText}>Book Now</Text>
+              </TouchableOpacity>
             </View>
           )}
         />
       ) : (
-        <Text style={styles.noData}>❌ No recommendations found.</Text>
+        <Text style={styles.noData}>No recommendations found.</Text>
       )}
-    </View>
+    </LinearGradient>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 20,
-    backgroundColor: "#ecf0f1",
-  },
+  container: { flex: 1, padding: 20, justifyContent: "center" },
   header: {
     fontSize: 26,
     fontWeight: "bold",
     textAlign: "center",
-    color: "#2c3e50",
+    color: "#fff",
     marginBottom: 20,
-  },
-  loader: {
-    marginTop: 50,
   },
   card: {
     backgroundColor: "#fff",
-    borderRadius: 12,
+    padding: 20,
+    borderRadius: 15,
+    marginBottom: 15,
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.3,
     shadowRadius: 5,
-    elevation: 5,
-    marginBottom: 15,
+    elevation: 6,
   },
-  image: {
-    width: "100%",
-    height: 200,
-    justifyContent: "flex-end",
-  },
-  overlay: {
-    backgroundColor: "rgba(0,0,0,0.5)",
-    padding: 15,
-    borderBottomLeftRadius: 10,
-    borderBottomRightRadius: 10,
-  },
-  title: {
-    fontSize: 20,
-    fontWeight: "bold",
-    color: "#fff",
-  },
-  details: {
-    fontSize: 14,
-    color: "#ecf0f1",
-    marginTop: 5,
-  },
-  noData: {
-    textAlign: "center",
+  title: { fontSize: 20, fontWeight: "bold", color: "#333" },
+  detail: { fontSize: 16, color: "#555", marginVertical: 2 },
+  accommodations: {
     fontSize: 16,
-    color: "red",
-    marginTop: 20,
+    fontStyle: "italic",
+    color: "#007BFF",
+    marginVertical: 5,
   },
+  button: {
+    marginTop: 10,
+    backgroundColor: "#007BFF",
+    paddingVertical: 12,
+    borderRadius: 10,
+    alignItems: "center",
+    shadowColor: "#007BFF",
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.3,
+    shadowRadius: 4,
+    elevation: 6,
+  },
+  buttonText: { color: "#fff", fontSize: 16, fontWeight: "bold" },
+  noData: { fontSize: 18, color: "#fff", textAlign: "center", marginTop: 20 },
 });

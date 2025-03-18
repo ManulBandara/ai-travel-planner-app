@@ -5,19 +5,15 @@ import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 from pydantic import BaseModel
 from typing import List
-import os
-
-# Get the absolute path of the current directory
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Load ML Model & Data
-with open(os.path.join(BASE_DIR, "travel_vectorizer.pkl"), "rb") as f:
+with open("travel_vectorizer.pkl", "rb") as f:
     vectorizer = pickle.load(f)
 
-with open(os.path.join(BASE_DIR, "travel_feature_vectors.pkl"), "rb") as f:
+with open("travel_feature_vectors.pkl", "rb") as f:
     feature_vectors_travel = pickle.load(f)
 
-df_travel = pd.read_csv(os.path.join(BASE_DIR, "processed_travel_data.csv"))
+df_travel = pd.read_csv("processed_travel_data.csv")
 
 # Budget mapping
 budget_map = {'Normal': 100, 'Moderate': 500, 'Expensive': 1000}
@@ -25,15 +21,16 @@ budget_map = {'Normal': 100, 'Moderate': 500, 'Expensive': 1000}
 # FastAPI instance
 app = FastAPI()
 
-# ✅ Enable CORS for React Native Metro server
+# Enable CORS for React Native to connect with FastAPI
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Allow all origins (you can restrict this)
+    allow_origins=["*"],  # Allow all origins (Change this for production)
     allow_credentials=True,
-    allow_methods=["*"],  # Allow all HTTP methods (GET, POST, etc.)
-    allow_headers=["*"],  # Allow all headers
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
+# Request Model
 class RecommendationRequest(BaseModel):
     activities: List[str]
     travelers_type: str
@@ -61,7 +58,6 @@ def recommend_destinations(request: RecommendationRequest):
     sorted_indices = similarity_scores[0].argsort()[::-1][:3]
     recommended_destinations = filtered_df.iloc[sorted_indices]
 
-    return recommended_destinations[['Destination', 'Category', 'Budget', 'Duration']].to_dict(orient="records")
+    # Return destinations with accommodations
+    return recommended_destinations[['Destination', 'Category', 'Budget', 'Duration', 'Accommodations']].to_dict(orient="records")
 
-# Run FastAPI server with:
-# uvicorn main:app --reload

@@ -9,12 +9,13 @@ import {
 } from "react-native";
 import { Colors } from "./../../constants/Colors";
 import { Calendar } from "react-native-calendars";
-import { useRouter } from "expo-router";
+import { useNavigation, useRouter } from "expo-router"; // Import useNavigation
 import { MaterialIcons } from "@expo/vector-icons";
 import { auth, db } from "../../configs/FirebaseConfig.js"; // Firebase import
 import { doc, getDoc, updateDoc, setDoc } from "firebase/firestore";
 
 export default function SelectDates() {
+  const navigation = useNavigation(); // Navigation hook
   const router = useRouter();
   const [selectedDates, setSelectedDates] = useState({});
   const [startDate, setStartDate] = useState(null);
@@ -28,6 +29,14 @@ export default function SelectDates() {
       easing: Easing.ease,
       useNativeDriver: true,
     }).start();
+
+    // Set navigation options for back button
+    navigation.setOptions({
+      headerShown: true,
+      headerTransparent: true,
+      headerTitle: "",
+      headerBackVisible: true,
+    });
   }, []);
 
   const handleDayPress = (day) => {
@@ -90,13 +99,11 @@ export default function SelectDates() {
       const docSnap = await getDoc(userPreferencesRef);
 
       if (docSnap.exists()) {
-        // Update the document with travel dates
         await updateDoc(userPreferencesRef, {
           startDate: startDate,
           endDate: endDate,
         });
       } else {
-        // Create new document if it doesn't exist
         await setDoc(userPreferencesRef, {
           startDate: startDate,
           endDate: endDate,

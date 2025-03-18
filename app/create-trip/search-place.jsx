@@ -108,7 +108,7 @@ export default function SearchPlace() {
         style={{
           fontFamily: "outfit-medium",
           fontSize: 18,
-          color: "#777",
+          color: "#0478A7",
           marginBottom: 20,
         }}
       >
