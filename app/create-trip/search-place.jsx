@@ -12,6 +12,8 @@ import { Colors } from "./../../constants/Colors";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { SelectTravelerList } from "./../../constants/Options";
 import { LinearGradient } from "expo-linear-gradient";
+import { auth, db } from "../../configs/FirebaseConfig.js"; // Import Firebase config
+import { doc, getDoc, setDoc, updateDoc } from "firebase/firestore";
 
 export default function SearchPlace() {
   const navigation = useNavigation();
@@ -31,6 +33,8 @@ export default function SearchPlace() {
   const handleSelectOption = (option) => {
     setSelectedOption(option);
     console.log("Selected Option: ", option.label);
+
+    // Animate button
     Animated.sequence([
       Animated.timing(scaleValue, {
         toValue: 0.95,
@@ -47,11 +51,42 @@ export default function SearchPlace() {
     ]).start();
   };
 
-  const handleNextButtonPress = () => {
-    if (selectedOption) {
-      router.push("/create-trip/select-dates");
-    } else {
+  const handleNextButtonPress = async () => {
+    if (!selectedOption) {
       alert("Please select a travel option");
+      return;
+    }
+
+    const user = auth.currentUser;
+
+    if (!user) {
+      alert("User not authenticated!");
+      return;
+    }
+
+    const userPreferencesRef = doc(db, "preferences", user.uid);
+
+    try {
+      // Fetch existing user data
+      const docSnap = await getDoc(userPreferencesRef);
+
+      if (docSnap.exists()) {
+        // Update the document with the traveler option
+        await updateDoc(userPreferencesRef, {
+          traveler: selectedOption.label,
+        });
+      } else {
+        // If no preferences exist, create a new document
+        await setDoc(userPreferencesRef, {
+          traveler: selectedOption.label,
+          preferences: [], // Ensure preferences is an array
+        });
+      }
+
+      console.log("Traveler selection saved:", selectedOption.label);
+      router.push("/create-trip/select-dates");
+    } catch (error) {
+      console.error("Error updating traveler selection:", error);
     }
   };
 
@@ -61,7 +96,7 @@ export default function SearchPlace() {
         flex: 1,
         padding: 25,
         paddingTop: 75,
-        backgroundColor: Colors.WHITE, // Change background to white
+        backgroundColor: Colors.WHITE,
       }}
     >
       <Text

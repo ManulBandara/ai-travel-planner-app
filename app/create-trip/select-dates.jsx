@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   View,
   Text,
@@ -8,19 +8,20 @@ import {
   Easing,
 } from "react-native";
 import { Colors } from "./../../constants/Colors";
-import { Calendar, LocaleConfig } from "react-native-calendars";
+import { Calendar } from "react-native-calendars";
 import { useRouter } from "expo-router";
-import { MaterialIcons } from "@expo/vector-icons"; // Import icons from Expo
+import { MaterialIcons } from "@expo/vector-icons";
+import { auth, db } from "../../configs/FirebaseConfig.js"; // Firebase import
+import { doc, getDoc, updateDoc, setDoc } from "firebase/firestore";
 
 export default function SelectDates() {
   const router = useRouter();
   const [selectedDates, setSelectedDates] = useState({});
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
-  const [fadeAnim] = useState(new Animated.Value(0)); // Animation for fade-in effect
+  const [fadeAnim] = useState(new Animated.Value(0));
 
-  // Fade-in animation when the component mounts
-  React.useEffect(() => {
+  useEffect(() => {
     Animated.timing(fadeAnim, {
       toValue: 1,
       duration: 1000,
@@ -71,24 +72,49 @@ export default function SelectDates() {
     return range;
   };
 
-  const handleNext = () => {
-    if (startDate && endDate) {
-      router.push({
-        pathname: "/create-trip/select-budget",
-        params: { startDate, endDate },
-      });
-    } else {
+  const handleNext = async () => {
+    if (!startDate || !endDate) {
       alert("Please select a valid date range.");
+      return;
+    }
+
+    const user = auth.currentUser;
+    if (!user) {
+      alert("User not authenticated!");
+      return;
+    }
+
+    const userPreferencesRef = doc(db, "preferences", user.uid);
+
+    try {
+      const docSnap = await getDoc(userPreferencesRef);
+
+      if (docSnap.exists()) {
+        // Update the document with travel dates
+        await updateDoc(userPreferencesRef, {
+          startDate: startDate,
+          endDate: endDate,
+        });
+      } else {
+        // Create new document if it doesn't exist
+        await setDoc(userPreferencesRef, {
+          startDate: startDate,
+          endDate: endDate,
+          preferences: [],
+        });
+      }
+
+      console.log("Travel dates saved:", startDate, endDate);
+      router.push("/create-trip/select-budget");
+    } catch (error) {
+      console.error("Error updating travel dates:", error);
     }
   };
 
   return (
-    
     <Animated.View style={[styles.container, { opacity: fadeAnim }]}>
-      {/* Header */}
       <Text style={styles.header}>Select Travel Dates</Text>
 
-      {/* Calendar */}
       <View style={styles.calendarContainer}>
         <Calendar
           onDayPress={handleDayPress}
@@ -105,7 +131,6 @@ export default function SelectDates() {
         />
       </View>
 
-      {/* Selected Dates Display */}
       {startDate && endDate && (
         <View style={styles.selectedDatesContainer}>
           <MaterialIcons name="date-range" size={24} color={Colors.PRIMARY} />
@@ -115,12 +140,10 @@ export default function SelectDates() {
         </View>
       )}
 
-      {/* Instructions */}
       <Text style={styles.instructions}>
         Choose your travel dates to start planning your trip.
       </Text>
 
-      {/* Next Button */}
       <TouchableOpacity style={styles.nextButton} onPress={handleNext}>
         <Text style={styles.nextButtonText}>Next</Text>
         <MaterialIcons name="arrow-forward" size={24} color={Colors.WHITE} />
@@ -148,8 +171,8 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     overflow: "hidden",
     marginBottom: 20,
-    elevation: 5, // Add shadow for Android
-    shadowColor: "#000", // Add shadow for iOS
+    elevation: 5,
+    shadowColor: "#000",
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
     shadowRadius: 5,
@@ -181,8 +204,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     marginTop: 20,
-    elevation: 5, // Add shadow for Android
-    shadowColor: "#000", // Add shadow for iOS
+    elevation: 5,
+    shadowColor: "#000",
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
     shadowRadius: 5,

@@ -10,6 +10,9 @@ import {
 } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import { useRouter } from "expo-router";
+import { auth, db } from "../../configs/FirebaseConfig.js"; // Import Firebase config
+import { collection, doc, setDoc } from "firebase/firestore";
+import { getAuth } from "firebase/auth";
 
 export default function SelectPreference() {
   const router = useRouter();
@@ -30,9 +33,26 @@ export default function SelectPreference() {
     setPreferencesList(preferencesList.filter((pref) => pref !== item));
   };
 
-  const handleNext = () => {
-    if (preferencesList.length > 0) {
-      router.push("/create-trip/search-place");
+  const handleNext = async () => {
+    const authInstance = getAuth();
+    const user = authInstance.currentUser;
+
+    if (user && preferencesList.length > 0) {
+      try {
+        // Reference to Firestore document
+        const userPreferencesRef = doc(collection(db, "preferences"), user.uid);
+
+        // Store preferences in Firestore
+        await setDoc(userPreferencesRef, {
+          preferences: preferencesList,
+          timestamp: new Date(),
+        });
+
+        console.log("Preferences saved successfully for user:", user.uid);
+        router.push("/create-trip/search-place");
+      } catch (error) {
+        console.error("Error adding document:", error);
+      }
     }
   };
 
@@ -134,14 +154,14 @@ export default function SelectPreference() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "white", // Clean white background
+    backgroundColor: "white",
     padding: 20,
   },
   header: {
     fontSize: 28,
     fontWeight: "bold",
     textAlign: "center",
-    color: "#222", // Darker text for contrast
+    color: "#222",
     marginBottom: 20,
     marginTop: 50,
   },
@@ -152,9 +172,6 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     paddingHorizontal: 15,
     paddingVertical: 10,
-    shadowColor: "#000",
-    shadowOpacity: 0.1,
-    shadowRadius: 5,
     elevation: 4,
   },
   input: {
@@ -163,7 +180,7 @@ const styles = StyleSheet.create({
     color: "#333",
   },
   addButton: {
-    backgroundColor: "black", // Black button for modern look
+    backgroundColor: "black",
     padding: 12,
     borderRadius: 10,
     marginLeft: 10,
@@ -180,9 +197,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#FAFAFA",
     borderRadius: 15,
     marginVertical: 5,
-    shadowColor: "#000",
-    shadowOpacity: 0.1,
-    shadowRadius: 5,
     elevation: 3,
   },
   listItemText: {
@@ -208,9 +222,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#E0E0E0",
     borderRadius: 15,
     marginHorizontal: 5,
-    shadowColor: "#000",
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
     elevation: 3,
   },
   exampleText: {
@@ -220,13 +231,10 @@ const styles = StyleSheet.create({
   },
   nextButton: {
     padding: 15,
-    backgroundColor: "black", // Black for a modern feel
+    backgroundColor: "black",
     borderRadius: 15,
     alignItems: "center",
     marginTop: 20,
-    shadowColor: "#000",
-    shadowOpacity: 0.3,
-    shadowRadius: 10,
     elevation: 6,
   },
   disabledButton: {
