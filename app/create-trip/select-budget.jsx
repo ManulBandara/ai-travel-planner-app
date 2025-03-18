@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, Text, TouchableOpacity, StyleSheet, Image } from "react-native";
+import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import { Colors } from "./../../constants/Colors";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import { useRouter } from "expo-router";
@@ -29,13 +29,11 @@ export default function SelectBudget() {
       const docSnap = await getDoc(userPreferencesRef);
 
       if (docSnap.exists()) {
-        await updateDoc(userPreferencesRef, {
-          budget: selectedBudget,
-        });
+        await updateDoc(userPreferencesRef, { budget: selectedBudget });
       } else {
         await setDoc(userPreferencesRef, {
           budget: selectedBudget,
-          startDate: "", // Placeholder, as dates may be set later
+          startDate: "",
           endDate: "",
           preferences: [],
         });
@@ -58,9 +56,9 @@ export default function SelectBudget() {
 
       <View style={styles.cardContainer}>
         {[
-          { id: "cheap", title: "Budget", color: "#E3F2FD" },
-          { id: "moderate", title: "Moderate", color: "#FFECB3" },
-          { id: "luxury", title: "Luxury", color: "#F8BBD0" },
+          { id: "cheap", title: "Budget", color: "#D1FAE5" },
+          { id: "moderate", title: "Moderate", color: "#FDE68A" },
+          { id: "luxury", title: "Luxury", color: "#FBCFE8" },
         ].map((item) => (
           <TouchableOpacity
             key={item.id}
@@ -70,12 +68,13 @@ export default function SelectBudget() {
               selectedBudget === item.id && styles.selectedCard,
             ]}
             onPress={() => setSelectedBudget(item.id)}
+            activeOpacity={0.8}
           >
             <Text style={styles.cardTitle}>{item.title}</Text>
             {selectedBudget === item.id && (
               <Icon
                 name="check-circle"
-                size={24}
+                size={26}
                 color={Colors.SUCCESS}
                 style={styles.checkIcon}
               />
@@ -88,6 +87,7 @@ export default function SelectBudget() {
         style={[styles.nextButton, !selectedBudget && styles.disabledButton]}
         onPress={handleNext}
         disabled={!selectedBudget}
+        activeOpacity={0.8}
       >
         <Text style={styles.nextButtonText}>Continue</Text>
       </TouchableOpacity>
@@ -103,10 +103,11 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   header: {
-    fontSize: 28,
+    fontSize: 30,
+    fontWeight: "bold",
     textAlign: "center",
     color: Colors.DARK,
-    marginBottom: 30,
+    marginBottom: 140,
   },
   cardContainer: {
     width: "100%",
@@ -115,18 +116,24 @@ const styles = StyleSheet.create({
   card: {
     width: "90%",
     padding: 20,
-    borderRadius: 20,
+    borderRadius: 25,
     marginBottom: 15,
     alignItems: "center",
     flexDirection: "row",
     justifyContent: "space-between",
+    elevation: 3,
+    shadowColor: "#000",
+    shadowOpacity: 0.1,
+    shadowRadius: 10,
   },
   selectedCard: {
-    borderWidth: 2,
+    borderWidth: 3,
     borderColor: Colors.PRIMARY,
+    shadowOpacity: 0.3,
   },
   cardTitle: {
-    fontSize: 20,
+    fontSize: 22,
+    fontWeight: "600",
     color: Colors.DARK,
   },
   checkIcon: {
@@ -135,22 +142,27 @@ const styles = StyleSheet.create({
   nextButton: {
     padding: 15,
     backgroundColor: Colors.PRIMARY,
-    borderRadius: 15,
+    borderRadius: 20,
     alignItems: "center",
     marginTop: 30,
     width: "80%",
+    elevation: 5,
+    shadowColor: "#000",
+    shadowOpacity: 0.2,
+    shadowRadius: 8,
   },
   disabledButton: {
     backgroundColor: "#ccc",
   },
   nextButtonText: {
     color: Colors.WHITE,
-    fontSize: 18,
+    fontSize: 20,
+    fontWeight: "600",
   },
   backButton: {
     position: "absolute",
-    top: 40,
-    left: 20,
+    top: 5,
+    left: 0,
     padding: 10,
   },
 });
