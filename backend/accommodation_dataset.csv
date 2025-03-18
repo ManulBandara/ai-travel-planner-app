@@ -1,0 +1,519 @@
+Place,Accommodation Name,Category,Price,Facilities,Rating,Distance
+Pinnawala,Resort Resort Pinnawala,Guesthouse,79,"Spa, Wi-Fi, Restaurant",4.1,1.5
+Jaffna,Lodge Inn Jaffna,Guesthouse,142,"Pool, Spa, Restaurant",4.8,2.7
+Gampaha,Retreat Inn Gampaha,Guesthouse,298,"Garden, Pool",4.3,1.5
+Melsiripura,Villa Hotel Melsiripura,Hotel,161,"Spa, Gym",5,1.5
+Colombo,Lodge Palace Colombo,Guesthouse,212,"Pool, Restaurant",3.9,4.8
+Meegama,View House Meegama,Guesthouse,263,"Spa, Gym, Garden",5,1.7
+Kataragama,Palace Retreat Kataragama,Hotel,226,"Gym, Wi-Fi",3.9,4.6
+Horana,Lodge Resort Horana,Resort,177,"Pool, Gym",4.9,4
+Warakapola,Resort Retreat Warakapola,Resort,102,"Restaurant, Spa",4.6,4
+Mirigama,Resort Hotel Mirigama,Guesthouse,276,"Gym, Pool, Garden, Spa",3.7,2.4
+Hatton,The Grand Inn Hatton,Hotel,108,"Restaurant, Gym, Wi-Fi",3.7,2.7
+Wattegama,Hotel House Wattegama,Resort,52,"Spa, Wi-Fi",3.9,2.3
+Dambulla,Heritage Inn Dambulla,Hotel,236,"Garden, Wi-Fi",3.7,2.5
+Galle,Retreat Villa Galle,Hotel,222,"Spa, Restaurant",4.6,1.6
+Negombo,Lodge Villa Negombo,Resort,113,"Restaurant, Pool, Wi-Fi, Spa",4.5,1.5
+Puttalam,Lodge Inn Puttalam,Guesthouse,65,"Spa, Gym, Garden, Wi-Fi",4,2.1
+Ambalantota,Heritage House Ambalantota,Guesthouse,272,"Restaurant, Pool, Wi-Fi",3.8,4.1
+Beliatta,View Inn Beliatta,Hotel,64,"Garden, Wi-Fi, Restaurant",3.8,1.3
+Denagama,Hotel Palace Denagama,Resort,159,"Spa, Wi-Fi, Pool, Restaurant",4.3,0.8
+Wilpattu,Retreat Inn Wilpattu,Resort,228,"Garden, Gym, Pool, Wi-Fi",4.1,5
+Kelaniya,Heritage Villa Kelaniya,Guesthouse,186,"Garden, Pool, Spa",4.6,1.1
+Kalpitiya,Resort Hotel Kalpitiya,Guesthouse,271,"Restaurant, Wi-Fi, Gym",3.8,3.8
+Maskeliya,View Villa Maskeliya,Resort,299,"Spa, Pool, Garden, Gym",4.7,0.6
+Kurunegala,View Resort Kurunegala,Hotel,149,"Wi-Fi, Gym",4,1.2
+Wellawaya,The Grand Retreat Wellawaya,Hotel,130,"Restaurant, Gym, Wi-Fi",4.1,1.2
+Dikwella,Palace Hotel Dikwella,Hotel,290,"Restaurant, Gym, Wi-Fi, Garden",4.5,1.3
+Puttalam,Heritage Retreat Puttalam,Hotel,120,"Gym, Pool",3.9,1.2
+Denagama,Lodge Hotel Denagama,Guesthouse,138,"Spa, Pool, Restaurant",4.5,0.9
+Kadugannawa,Lodge Palace Kadugannawa,Hotel,288,"Garden, Pool",3.9,3.1
+Ambalangoda,View Hotel Ambalangoda,Hotel,254,"Spa, Wi-Fi",4.1,0.1
+Horton Plains,Heritage Inn Horton Plains,Resort,113,"Garden, Gym, Spa",4.3,0.6
+Aluthgama,The Grand House Aluthgama,Guesthouse,158,"Gym, Garden",4.7,4
+Balangoda,Lodge Inn Balangoda,Resort,168,"Restaurant, Garden, Wi-Fi",3.7,1.1
+Jaffna,Villa House Jaffna,Guesthouse,280,"Spa, Gym",3.6,4.5
+Kithulgala,Retreat House Kithulgala,Resort,57,"Wi-Fi, Garden, Restaurant, Gym",4.6,4.1
+Badulla,The Grand Resort Badulla,Guesthouse,209,"Pool, Gym",4,2.4
+Wellawaya,Heritage Retreat Wellawaya,Hotel,206,"Garden, Gym, Restaurant, Wi-Fi",4.7,4.9
+Meegama,Resort Resort Meegama,Hotel,147,"Pool, Garden",4.8,1.5
+Kandy,Palace Retreat Kandy,Hotel,143,"Pool, Spa",4.2,0.9
+Piliyandala,Heritage Villa Piliyandala,Hotel,261,"Garden, Restaurant, Gym",4.8,2.1
+Wilpattu,Palace Hotel Wilpattu,Hotel,81,"Gym, Wi-Fi, Garden",4.7,1.8
+Embilipitiya,Villa House Embilipitiya,Resort,199,"Garden, Pool, Spa, Gym",3.9,2.8
+Kithulgala,Lodge House Kithulgala,Hotel,55,"Restaurant, Pool",3.8,1.5
+Ella Rock,Resort Palace Ella,Guesthouse,279,"Wi-Fi, Restaurant, Gym, Garden",4.7,3.2
+Nuwara Eliya,The Grand Hotel Nuwara Eliya,Hotel,153,"Garden, Gym, Wi-Fi, Restaurant",4.3,4.1
+Dickoya,Villa Resort Dickoya,Resort,230,"Spa, Wi-Fi",4.7,0.6
+Seeduwa,Retreat House Seeduwa,Guesthouse,209,"Spa, Wi-Fi, Gym, Restaurant",3.9,1
+Udawalawe,Palace Retreat Udawalawe,Resort,161,"Garden, Spa, Wi-Fi, Pool",3.9,0.5
+Tangalle,Hotel Retreat Tangalle,Guesthouse,92,"Gym, Restaurant, Spa, Wi-Fi",4.6,0.7
+Kalutara,Heritage House Kalutara,Hotel,230,"Wi-Fi, Pool",4.6,0.3
+Wattala,The Grand Retreat Wattala,Resort,270,"Wi-Fi, Restaurant",4.3,4.2
+Melsiripura,Hotel Inn Melsiripura,Resort,164,"Pool, Gym",3.6,2.5
+Unawatuna,The Grand Hotel Unawatuna,Resort,215,"Spa, Wi-Fi, Pool",4,4.6
+Tissamaharama,Retreat Resort Tissamaharama,Hotel,296,"Pool, Spa, Gym",4.3,0.6
+Kalpitiya,Palace Resort Kalpitiya,Resort,222,"Garden, Pool, Wi-Fi, Restaurant",3.6,1.9
+Kitulgala,Retreat House Kitulgala,Resort,63,"Gym, Restaurant, Wi-Fi, Spa",4.5,0.8
+Talalla,Retreat House Talalla,Guesthouse,244,"Wi-Fi, Pool, Restaurant, Spa",3.9,1.7
+Anuradhapura,Retreat Resort Anuradhapura,Hotel,162,"Restaurant, Garden",3.8,0.9
+Gampola,Lodge Inn Gampola,Guesthouse,111,"Restaurant, Spa, Garden, Pool",3.7,1.2
+Minuwangoda,Palace Hotel Minuwangoda,Guesthouse,221,"Garden, Wi-Fi",5,4.9
+Beliatta,The Grand Villa Beliatta,Guesthouse,289,"Garden, Spa, Pool, Restaurant",4.3,3.1
+Beruwala,Villa Retreat Beruwala,Hotel,101,"Wi-Fi, Garden, Spa",5,2.8
+Beruwala,The Grand Villa Beruwala,Hotel,189,"Restaurant, Spa, Gym",4.4,2.4
+Horton Plains,Lodge Inn Horton Plains,Guesthouse,141,"Restaurant, Gym, Pool, Garden",4.4,4.1
+Trincomalee,Lodge Hotel Trincomalee,Guesthouse,161,"Spa, Pool, Gym",4.5,3.4
+Mullaitivu,Heritage Hotel Mullaitivu,Guesthouse,98,"Wi-Fi, Garden, Gym",4.2,2.1
+Dehiwala,Palace House Dehiwala,Guesthouse,108,"Wi-Fi, Garden, Gym, Spa",4.2,3.8
+Seeduwa,The Grand Inn Seeduwa,Guesthouse,235,"Spa, Restaurant, Gym, Garden",4.5,0.5
+Pasikuda,Retreat Inn Pasikuda,Hotel,194,"Wi-Fi, Garden, Pool",5,3.3
+Arugam Bay,Villa Palace Arugam Bay,Resort,271,"Wi-Fi, Restaurant, Garden, Spa",3.9,1.2
+Hambantota,Lodge Hotel Hambantota,Hotel,193,"Gym, Wi-Fi, Spa",3.5,0.2
+Hatton,Lodge Inn Hatton,Hotel,258,"Gym, Wi-Fi, Pool, Garden",4.5,3.6
+Jaffna,Palace Inn Jaffna,Hotel,180,"Pool, Restaurant, Gym, Spa",4.4,4.8
+Tangalle,Retreat Hotel Tangalle,Hotel,229,"Garden, Pool",4.5,1.1
+Bentota,The Grand Palace Bentota,Hotel,131,"Pool, Gym",3.7,0.9
+Arugam Bay,The Grand Hotel Arugam Bay,Hotel,170,"Pool, Garden, Wi-Fi",3.8,1.2
+Tangalle,Retreat Retreat Tangalle,Resort,189,"Garden, Pool",3.5,3.6
+Negombo,View Retreat Negombo,Hotel,205,"Restaurant, Spa",4.3,0.8
+Udawalawe,Villa Resort Udawalawe,Guesthouse,231,"Garden, Pool, Wi-Fi, Restaurant",5,2.2
+Colombo,Villa Resort Colombo,Guesthouse,186,"Pool, Gym, Spa, Wi-Fi",4.1,2.3
+Unawatuna,Villa Palace Unawatuna,Guesthouse,281,"Garden, Gym, Restaurant",4.7,4
+Beliatta,Villa Retreat Beliatta,Guesthouse,282,"Wi-Fi, Spa",3.6,2.4
+Chilaw,Villa House Chilaw,Hotel,72,"Garden, Restaurant, Gym",4.8,1.5
+Tissamaharama,Villa House Tissamaharama,Resort,119,"Spa, Garden, Pool, Wi-Fi",4.1,3.6
+Beruwala,Palace Palace Beruwala,Guesthouse,171,"Spa, Pool, Restaurant, Garden",4.8,4.7
+Beliatta,View Villa Beliatta,Guesthouse,111,"Restaurant, Wi-Fi",3.9,2.3
+Hambantota,Retreat Inn Hambantota,Resort,92,"Spa, Pool, Garden",3.7,4.4
+Seeduwa,Hotel Villa Seeduwa,Hotel,61,"Gym, Restaurant, Garden",4.3,1.7
+Warakapola,Palace Retreat Warakapola,Guesthouse,107,"Gym, Pool",4.3,1.9
+Haputale,Palace Inn Haputale,Resort,120,"Pool, Spa, Gym",4.6,3.8
+Colombo,The Grand Retreat Colombo,Resort,205,"Spa, Restaurant, Wi-Fi",4.2,4.1
+Dambulla,Lodge Hotel Dambulla,Resort,263,"Gym, Restaurant",3.6,0.7
+Matale,Retreat Villa Matale,Guesthouse,276,"Wi-Fi, Garden",4.7,4.5
+Chilaw,Heritage Palace Chilaw,Resort,253,"Spa, Gym, Restaurant",4.4,3.8
+Udawalawe,View Palace Udawalawe,Hotel,295,"Garden, Pool, Restaurant, Wi-Fi",4.4,3.4
+Kitulgala,Lodge Resort Kitulgala,Guesthouse,149,"Gym, Pool",4.4,3.7
+Puttalam,Palace Palace Puttalam,Resort,134,"Wi-Fi, Restaurant, Garden, Spa",3.6,1.3
+Ingiriya,The Grand Villa Ingiriya,Hotel,266,"Pool, Gym, Garden, Wi-Fi",3.6,2.6
+Wattala,Heritage Inn Wattala,Guesthouse,85,"Gym, Pool, Wi-Fi, Restaurant",4.6,3.1
+Kithulgala,Villa Retreat Kithulgala,Hotel,54,"Garden, Spa",3.5,0.5
+Piliyandala,Villa Inn Piliyandala,Hotel,88,"Pool, Garden, Wi-Fi",3.8,1.7
+Horton Plains,Heritage Inn Horton Plains,Resort,198,"Wi-Fi, Restaurant, Garden, Gym",4.4,2.6
+Mannar,Palace Resort Mannar,Hotel,126,"Spa, Wi-Fi, Garden, Pool",4.4,1.3
+Kelaniya,Retreat Resort Kelaniya,Resort,290,"Restaurant, Pool, Garden",4.5,4.5
+Meegama,Villa Hotel Meegama,Guesthouse,110,"Pool, Gym, Garden",4.1,3.5
+Unawatuna,Lodge House Unawatuna,Hotel,252,"Pool, Wi-Fi, Gym",4.5,1.6
+Wattala,View Retreat Wattala,Resort,214,"Spa, Wi-Fi, Garden",4.8,0.3
+Balangoda,Hotel Resort Balangoda,Hotel,294,"Wi-Fi, Spa",4.6,4.3
+Meegama,Palace Resort Meegama,Guesthouse,245,"Gym, Restaurant",3.6,1.1
+Ella Rock,Heritage Retreat Ella,Guesthouse,74,"Wi-Fi, Garden, Gym",4.5,0.8
+Horton Plains,Lodge Inn Horton Plains,Guesthouse,146,"Wi-Fi, Gym, Spa, Restaurant",4.6,2
+Balangoda,Palace Villa Balangoda,Hotel,141,"Pool, Wi-Fi",4.5,1.2
+Ambalantota,Resort Inn Ambalantota,Hotel,206,"Restaurant, Pool, Gym",3.6,4.3
+Ambalangoda,Retreat Hotel Ambalangoda,Resort,83,"Spa, Gym, Pool, Wi-Fi",4.9,4.8
+Dambulla,Palace Hotel Dambulla,Hotel,209,"Restaurant, Gym",4.4,3.6
+Wattala,Lodge House Wattala,Guesthouse,122,"Pool, Gym, Restaurant",4,4.9
+Ingiriya,Lodge Hotel Ingiriya,Guesthouse,294,"Restaurant, Gym",3.8,4.7
+Kelaniya,View Villa Kelaniya,Resort,255,"Restaurant, Wi-Fi",4.6,4.8
+Bentota,Villa Inn Bentota,Resort,119,"Garden, Wi-Fi",4.6,0.6
+Puttalam,The Grand Villa Puttalam,Resort,108,"Wi-Fi, Pool",4.5,1.7
+Negombo,Retreat Hotel Negombo,Guesthouse,148,"Spa, Gym",3.7,0.2
+Kurunegala,Heritage Retreat Kurunegala,Hotel,96,"Garden, Gym",4.4,2.7
+Galewela,Lodge Retreat Galewela,Resort,58,"Spa, Gym, Garden, Pool",3.8,2.1
+Ambalantota,Lodge Inn Ambalantota,Hotel,51,"Restaurant, Spa",3.9,1.6
+Colombo,View Inn Colombo,Hotel,262,"Spa, Pool, Wi-Fi",3.7,3.2
+Dambulla,Hotel Retreat Dambulla,Resort,231,"Garden, Wi-Fi",4.8,3
+Beliatta,Lodge Inn Beliatta,Resort,261,"Pool, Gym, Garden",3.7,2.7
+Anuradhapura,Hotel Resort Anuradhapura,Guesthouse,246,"Restaurant, Gym, Garden, Pool",3.8,2.9
+Batticaloa,Lodge Retreat Batticaloa,Guesthouse,174,"Spa, Garden, Pool",4.3,2
+Maskeliya,Retreat Villa Maskeliya,Resort,156,"Pool, Spa",5,3
+Chilaw,View Palace Chilaw,Resort,204,"Restaurant, Wi-Fi, Spa",4.3,3.8
+Negombo,Palace Villa Negombo,Hotel,277,"Restaurant, Wi-Fi, Garden",4.7,1.2
+Talalla,Retreat Inn Talalla,Hotel,143,"Gym, Wi-Fi, Spa",3.9,1.9
+Dikwella,Palace Palace Dikwella,Guesthouse,276,"Wi-Fi, Spa, Gym, Garden",3.7,1.9
+Deniyaya,Hotel House Deniyaya,Resort,229,"Wi-Fi, Garden, Spa, Gym",4.8,0.4
+Knuckles Range,Resort Villa Knuckles Range,Resort,243,"Gym, Garden, Spa, Restaurant",4.7,4.1
+Tangalle,Villa Villa Tangalle,Resort,75,"Spa, Pool, Garden, Restaurant",3.9,1.9
+Horton Plains,View Palace Horton Plains,Resort,88,"Wi-Fi, Spa",3.7,2.3
+Mannar,View Resort Mannar,Resort,211,"Pool, Garden, Restaurant, Gym",3.7,0.6
+Warakapola,Hotel Hotel Warakapola,Resort,283,"Pool, Restaurant, Wi-Fi, Gym",3.7,4
+Ginigathhena,View Hotel Ginigathhena,Hotel,169,"Pool, Restaurant, Gym",3.9,4.2
+Horton Plains,The Grand Palace Horton Plains,Resort,107,"Restaurant, Gym, Garden, Pool",4,4.6
+Kelaniya,Lodge Villa Kelaniya,Guesthouse,235,"Restaurant, Pool, Garden",3.6,2
+Kurunegala,Palace Resort Kurunegala,Hotel,299,"Gym, Garden, Wi-Fi",4.3,3.1
+Ginigathhena,Lodge Villa Ginigathhena,Hotel,80,"Spa, Pool",4.6,4.8
+Haputale,The Grand Retreat Haputale,Hotel,61,"Pool, Wi-Fi, Restaurant, Garden",3.5,4.5
+Tangalle,Resort Hotel Tangalle,Resort,149,"Restaurant, Garden, Gym, Pool",4.8,0.8
+Kurunegala,Resort Hotel Kurunegala,Hotel,242,"Garden, Wi-Fi, Restaurant",4.1,1
+Mirigama,The Grand House Mirigama,Resort,89,"Restaurant, Gym",4.1,2.5
+Knuckles Range,Resort Retreat Knuckles Range,Guesthouse,125,"Garden, Restaurant, Wi-Fi",4.9,2.3
+Ingiriya,Villa Retreat Ingiriya,Guesthouse,104,"Spa, Gym",4.4,4.7
+Balangoda,Heritage Resort Balangoda,Guesthouse,148,"Garden, Pool, Spa",4.9,1.2
+Kithulgala,Resort Villa Kithulgala,Guesthouse,159,"Pool, Spa",4.9,3.8
+Dambulla,Hotel Villa Dambulla,Guesthouse,77,"Garden, Restaurant",4.5,1.8
+Vavuniya,Palace Resort Vavuniya,Hotel,243,"Gym, Spa, Pool, Wi-Fi",4.9,3.6
+Bentota,The Grand Resort Bentota,Guesthouse,231,"Wi-Fi, Gym",3.9,4.8
+Tangalle,Villa Resort Tangalle,Hotel,58,"Garden, Gym",3.9,0.3
+Galewela,The Grand Palace Galewela,Resort,292,"Gym, Restaurant",4.2,1
+Tangalle,Resort Retreat Tangalle,Resort,128,"Garden, Restaurant, Gym, Wi-Fi",4.6,4.8
+Ambalantota,The Grand Hotel Ambalantota,Resort,92,"Spa, Wi-Fi, Pool, Gym",5,1
+Koggala,View Villa Koggala,Resort,291,"Wi-Fi, Spa, Restaurant",4.8,2.4
+Gampola,Heritage Inn Gampola,Hotel,216,"Spa, Pool, Garden, Wi-Fi",3.8,4.4
+Kadugannawa,Resort Resort Kadugannawa,Guesthouse,162,"Garden, Pool",4.5,1.8
+Knuckles Range,Palace Hotel Knuckles Range,Hotel,183,"Restaurant, Wi-Fi, Pool",3.6,2.1
+Kalutara,Resort Hotel Kalutara,Resort,123,"Gym, Restaurant, Garden",3.5,3.7
+Chilaw,The Grand Hotel Chilaw,Guesthouse,67,"Restaurant, Gym, Pool",4.7,4.1
+Udawalawe,Heritage House Udawalawe,Resort,172,"Spa, Wi-Fi, Garden, Restaurant",4.6,4.3
+Balangoda,Resort Inn Balangoda,Resort,220,"Restaurant, Spa, Garden, Wi-Fi",4.5,2.5
+Habarana,Villa Palace Habarana,Resort,91,"Garden, Restaurant",3.6,3.4
+Kataragama,Palace Resort Kataragama,Hotel,182,"Gym, Spa, Garden, Wi-Fi",4.7,1.2
+Kurunegala,Palace Resort Kurunegala,Resort,250,"Pool, Gym, Restaurant, Wi-Fi",4.4,0.1
+Galle,Lodge Palace Galle,Guesthouse,126,"Restaurant, Pool, Spa, Gym",4.8,2.7
+Melsiripura,Lodge House Melsiripura,Hotel,262,"Spa, Restaurant, Gym",4.7,0.5
+Kelaniya,Hotel House Kelaniya,Guesthouse,61,"Wi-Fi, Restaurant, Pool, Garden",3.6,0.9
+Puttalam,Resort Inn Puttalam,Guesthouse,51,"Wi-Fi, Gym, Garden",4.2,3
+Koggala,Palace Hotel Koggala,Guesthouse,179,"Gym, Pool, Spa, Restaurant",4.8,3.3
+Ginigathhena,Palace Retreat Ginigathhena,Resort,71,"Wi-Fi, Garden, Gym",4.2,2.4
+Dehiwala,Heritage Palace Dehiwala,Guesthouse,278,"Garden, Pool, Spa",4.4,4.6
+Matara,The Grand Inn Matara,Resort,52,"Pool, Wi-Fi",4.2,3.3
+Balangoda,Palace Hotel Balangoda,Hotel,77,"Wi-Fi, Gym, Spa, Garden",3.7,2.3
+Batticaloa,Villa Villa Batticaloa,Resort,130,"Pool, Restaurant, Wi-Fi",3.9,0.2
+Seeduwa,Retreat Palace Seeduwa,Resort,113,"Pool, Restaurant",3.5,1.2
+Weligama,Villa Palace Weligama,Resort,108,"Gym, Spa, Garden, Restaurant",3.8,1
+Aluthgama,Resort Inn Aluthgama,Guesthouse,146,"Wi-Fi, Garden, Restaurant, Pool",3.8,1.9
+Matara,Villa Resort Matara,Resort,283,"Garden, Restaurant",3.5,4
+Kataragama,The Grand Retreat Kataragama,Hotel,255,"Garden, Spa, Gym, Pool",4.3,1.8
+Yala National Park,View Palace Yala,Resort,250,"Garden, Wi-Fi, Spa, Pool",4.8,0.1
+Ginigathhena,Resort Villa Ginigathhena,Guesthouse,204,"Gym, Garden",4,2.2
+Yala National Park,Resort Retreat Yala,Resort,246,"Pool, Restaurant, Gym",4.8,3.5
+Wattala,Lodge Palace Wattala,Resort,165,"Gym, Restaurant",3.7,3.8
+Warakapola,Palace Inn Warakapola,Resort,242,"Spa, Garden",4.5,1.5
+Wattegama,Retreat Inn Wattegama,Guesthouse,71,"Pool, Spa, Gym, Wi-Fi",3.9,4.4
+Hatton,Resort Villa Hatton,Resort,261,"Garden, Gym, Spa",4.8,3
+Polonnaruwa,Heritage Inn Polonnaruwa,Hotel,182,"Spa, Pool, Restaurant, Wi-Fi",4.6,2.5
+Deniyaya,Lodge House Deniyaya,Hotel,282,"Gym, Restaurant, Wi-Fi",3.7,0.5
+Rakwana,Heritage Retreat Rakwana,Resort,147,"Spa, Wi-Fi, Garden",5,2.7
+Gampola,Lodge Inn Gampola,Hotel,231,"Restaurant, Pool, Wi-Fi, Garden",4.3,1.2
+Dehiwala,Hotel Hotel Dehiwala,Guesthouse,285,"Spa, Pool, Gym",3.7,3.8
+Piliyandala,Hotel Retreat Piliyandala,Hotel,109,"Wi-Fi, Gym",3.9,0.3
+Meegama,Resort Palace Meegama,Resort,281,"Wi-Fi, Restaurant",4.1,3.6
+Pasikuda,Heritage Villa Pasikuda,Hotel,232,"Garden, Wi-Fi, Restaurant, Spa",4.8,3.7
+Kataragama,Heritage Palace Kataragama,Resort,275,"Gym, Spa",4.7,0.4
+Minuwangoda,The Grand Retreat Minuwangoda,Resort,112,"Spa, Gym, Wi-Fi",4.2,3.5
+Ambalantota,Lodge Hotel Ambalantota,Resort,90,"Gym, Garden, Wi-Fi",4.8,3.7
+Polonnaruwa,Resort Retreat Polonnaruwa,Hotel,208,"Restaurant, Garden",4,1.6
+Haputale,Heritage Resort Haputale,Hotel,109,"Spa, Restaurant",3.6,1.8
+Kalpitiya,The Grand Hotel Kalpitiya,Guesthouse,174,"Garden, Wi-Fi, Spa",4.7,2.3
+Kandy,Retreat Retreat Kandy,Resort,214,"Gym, Restaurant",4.6,3.5
+Katunayake,View Villa Katunayake,Guesthouse,219,"Gym, Garden, Pool, Wi-Fi",4.2,2.5
+Anuradhapura,Palace Hotel Anuradhapura,Hotel,234,"Spa, Garden",3.6,1.6
+Vavuniya,Lodge House Vavuniya,Resort,203,"Pool, Gym, Wi-Fi",5,3.3
+Ambalantota,View House Ambalantota,Hotel,288,"Restaurant, Gym, Pool, Garden",4.6,2.8
+Katunayake,Palace Villa Katunayake,Hotel,280,"Restaurant, Pool, Wi-Fi",4.4,4.7
+Gampola,Retreat Palace Gampola,Hotel,262,"Gym, Garden",3.8,4.2
+Horana,Heritage Hotel Horana,Guesthouse,180,"Restaurant, Wi-Fi, Spa, Pool",4.3,1.1
+Puttalam,Villa House Puttalam,Hotel,206,"Garden, Pool, Restaurant",4.9,2.6
+Trincomalee,Villa Palace Trincomalee,Guesthouse,183,"Spa, Garden",4.3,3.8
+Matale,Lodge Inn Matale,Hotel,266,"Gym, Pool, Spa",3.8,3.7
+Batticaloa,Palace Inn Batticaloa,Hotel,140,"Wi-Fi, Spa, Pool",4.6,0.5
+Mannar,Resort House Mannar,Guesthouse,282,"Gym, Spa",5,0.8
+Haputale,Lodge Resort Haputale,Resort,212,"Pool, Gym",4,2.7
+Sigiriya,View Hotel Sigiriya,Resort,252,"Gym, Pool, Spa, Wi-Fi",3.9,3.6
+Kataragama,Lodge Resort Kataragama,Resort,231,"Restaurant, Wi-Fi, Gym",4.5,4.1
+Dehiwala,The Grand House Dehiwala,Resort,77,"Wi-Fi, Garden, Restaurant, Gym",3.8,4.8
+Pelmadulla,Retreat Hotel Pelmadulla,Resort,106,"Restaurant, Garden",4.3,3
+Udawalawe,Lodge Inn Udawalawe,Guesthouse,152,"Pool, Wi-Fi, Restaurant",3.6,4.6
+Deniyaya,The Grand Retreat Deniyaya,Guesthouse,199,"Gym, Garden, Restaurant",4.6,2.8
+Wattegama,Hotel Palace Wattegama,Hotel,184,"Spa, Pool, Garden, Restaurant",4.8,2.8
+Nawalapitiya,Palace Palace Nawalapitiya,Hotel,255,"Wi-Fi, Pool, Gym, Restaurant",4,1.2
+Sigiriya,The Grand Retreat Sigiriya,Resort,154,"Wi-Fi, Spa, Pool, Garden",4,3.2
+Meegama,Lodge Retreat Meegama,Resort,269,"Garden, Pool, Spa, Gym",3.8,3.6
+Wattegama,Hotel Hotel Wattegama,Hotel,231,"Restaurant, Garden",4.3,0.7
+Mullaitivu,View Villa Mullaitivu,Hotel,282,"Wi-Fi, Garden, Pool, Gym",3.9,2
+Badulla,Palace Villa Badulla,Resort,121,"Garden, Pool, Wi-Fi",4.9,3.3
+Kandy,The Grand Inn Kandy,Guesthouse,269,"Garden, Restaurant, Wi-Fi",4.9,2.3
+Dambulla,Lodge House Dambulla,Resort,245,"Gym, Pool",3.8,1
+Badulla,Heritage House Badulla,Guesthouse,185,"Restaurant, Garden, Pool, Spa",4.6,2.2
+Kadugannawa,Palace Resort Kadugannawa,Hotel,108,"Pool, Spa, Wi-Fi",4.1,2.3
+Horana,Resort Resort Horana,Resort,127,"Wi-Fi, Gym",3.6,2.4
+Melsiripura,Hotel Villa Melsiripura,Guesthouse,90,"Restaurant, Gym",4.2,3.1
+Kalpitiya,Hotel Retreat Kalpitiya,Resort,63,"Wi-Fi, Garden, Pool",4.3,4.9
+Vavuniya,View Hotel Vavuniya,Guesthouse,145,"Garden, Pool, Gym, Wi-Fi",4.2,0.8
+Gampaha,Palace Retreat Gampaha,Resort,89,"Pool, Spa, Garden",4.2,5
+Yala National Park,Retreat Villa Yala,Hotel,156,"Wi-Fi, Garden, Restaurant, Gym",4.1,1.1
+Chilaw,Palace House Chilaw,Guesthouse,256,"Gym, Restaurant, Garden, Spa",4.6,2.5
+Ambalantota,Hotel Palace Ambalantota,Resort,261,"Wi-Fi, Pool, Gym",3.7,3.3
+Hatton,Villa Inn Hatton,Hotel,221,"Pool, Spa, Garden, Wi-Fi",4.8,2.3
+Beruwala,The Grand House Beruwala,Hotel,66,"Pool, Gym",4.2,2.3
+Pinnawala,Hotel Resort Pinnawala,Hotel,216,"Spa, Wi-Fi, Garden",4.5,1.1
+Kalutara,Heritage Villa Kalutara,Resort,127,"Spa, Pool, Gym",3.6,3.6
+Ambalantota,Retreat Villa Ambalantota,Resort,275,"Gym, Wi-Fi, Spa",4.9,1.8
+Kalpitiya,View Retreat Kalpitiya,Guesthouse,97,"Wi-Fi, Pool, Garden, Gym",4.2,2
+Jaffna,Villa Inn Jaffna,Hotel,214,"Pool, Spa",3.5,4.1
+Mannar,Heritage Inn Mannar,Guesthouse,129,"Gym, Wi-Fi",5,0.8
+Katunayake,Hotel Palace Katunayake,Guesthouse,248,"Gym, Spa, Wi-Fi, Garden",4.1,1.2
+Pelmadulla,Resort Villa Pelmadulla,Resort,218,"Wi-Fi, Garden, Restaurant, Pool",4.9,2.8
+Badulla,Lodge Hotel Badulla,Guesthouse,140,"Garden, Wi-Fi, Pool",4.4,4.3
+Denagama,The Grand Resort Denagama,Resort,67,"Spa, Garden",5,0.3
+Pasikuda,Resort Retreat Pasikuda,Resort,287,"Pool, Restaurant, Wi-Fi",4.3,2.2
+Denagama,Retreat Retreat Denagama,Resort,136,"Pool, Garden, Wi-Fi, Gym",3.7,5
+Embilipitiya,Lodge Retreat Embilipitiya,Hotel,216,"Garden, Wi-Fi, Restaurant, Gym",3.6,2.1
+Udawalawe,View Villa Udawalawe,Guesthouse,100,"Garden, Restaurant",4.8,4.1
+Kadugannawa,Villa Hotel Kadugannawa,Guesthouse,125,"Restaurant, Garden",3.7,0.3
+Bentota,Heritage House Bentota,Resort,166,"Gym, Pool, Restaurant, Garden",5,2.3
+Tangalle,View Retreat Tangalle,Guesthouse,95,"Spa, Wi-Fi",4.6,4.9
+Minuwangoda,Resort Retreat Minuwangoda,Resort,94,"Restaurant, Wi-Fi, Spa",4.5,2
+Denagama,Lodge Inn Denagama,Hotel,134,"Garden, Restaurant, Gym",3.8,2.4
+Arugam Bay,The Grand House Arugam Bay,Resort,158,"Spa, Wi-Fi, Pool, Restaurant",4.1,1
+Dehiwala,The Grand House Dehiwala,Hotel,199,"Garden, Wi-Fi, Pool, Restaurant",3.6,2.2
+Gampola,Hotel Resort Gampola,Guesthouse,94,"Garden, Spa, Gym",4.9,4.6
+Horton Plains,Palace Villa Horton Plains,Hotel,132,"Garden, Gym, Spa",4.7,1
+Ratnapura,Hotel Resort Ratnapura,Resort,71,"Gym, Restaurant, Wi-Fi",4.6,0.9
+Katunayake,Lodge Retreat Katunayake,Resort,279,"Spa, Restaurant",4.3,1.6
+Mount Lavinia,Heritage Palace Mount Lavinia,Hotel,86,"Restaurant, Spa, Wi-Fi, Garden",4,4.5
+Mirigama,Heritage Hotel Mirigama,Hotel,155,"Gym, Spa, Restaurant",4.5,0.2
+Trincomalee,Lodge Hotel Trincomalee,Hotel,124,"Restaurant, Gym, Spa, Garden",3.7,0.4
+Pinnawala,View Palace Pinnawala,Guesthouse,243,"Restaurant, Pool, Gym",3.6,2.1
+Beruwala,Retreat Palace Beruwala,Resort,57,"Spa, Gym, Wi-Fi, Restaurant",4.4,3
+Aluthgama,Hotel Villa Aluthgama,Resort,72,"Wi-Fi, Pool, Garden",4.7,0.7
+Hatton,Hotel Palace Hatton,Hotel,151,"Garden, Spa, Wi-Fi",4.5,4.9
+Horana,Heritage Hotel Horana,Guesthouse,110,"Wi-Fi, Garden",3.6,2.1
+Vavuniya,Hotel Inn Vavuniya,Guesthouse,217,"Wi-Fi, Gym, Garden",4.8,3.5
+Puttalam,Hotel Retreat Puttalam,Resort,149,"Garden, Restaurant, Pool, Wi-Fi",3.6,0.4
+Kadugannawa,The Grand Retreat Kadugannawa,Guesthouse,245,"Restaurant, Spa",4.7,4.5
+Rakwana,The Grand House Rakwana,Hotel,239,"Restaurant, Gym, Spa, Wi-Fi",4.8,0.8
+Nawalapitiya,Resort Villa Nawalapitiya,Guesthouse,57,"Spa, Wi-Fi",3.8,1.6
+Badulla,Villa Retreat Badulla,Resort,279,"Restaurant, Garden",3.9,1.3
+Mullaitivu,Palace Villa Mullaitivu,Hotel,62,"Pool, Wi-Fi",3.8,2.4
+Kithulgala,Palace Villa Kithulgala,Guesthouse,91,"Pool, Garden, Wi-Fi",3.8,3
+Hatton,Resort Retreat Hatton,Hotel,191,"Wi-Fi, Spa",3.9,0.9
+Kithulgala,Hotel Retreat Kithulgala,Guesthouse,170,"Gym, Pool",4.6,0.3
+Talalla,View Resort Talalla,Hotel,206,"Gym, Pool, Garden",4,2
+Pinnawala,Resort Palace Pinnawala,Resort,86,"Restaurant, Garden, Gym",4,2.3
+Yala National Park,Retreat Palace Yala,Resort,106,"Pool, Garden",3.9,2.8
+Colombo,View House Colombo,Resort,83,"Restaurant, Pool, Gym",4.4,3.2
+Ginigathhena,Hotel Palace Ginigathhena,Hotel,184,"Spa, Gym",4.2,1.4
+Ambalantota,Villa Inn Ambalantota,Guesthouse,148,"Spa, Garden, Gym",4.8,3.9
+Katunayake,Villa Palace Katunayake,Guesthouse,203,"Restaurant, Garden",4.7,1.4
+Weligama,Palace Palace Weligama,Hotel,214,"Gym, Spa, Garden, Wi-Fi",4.4,0.9
+Wilpattu,The Grand Villa Wilpattu,Resort,122,"Pool, Spa",3.8,3.2
+Pelmadulla,Hotel Palace Pelmadulla,Hotel,218,"Restaurant, Pool, Garden",4.9,4.8
+Jaffna,The Grand Palace Jaffna,Guesthouse,184,"Restaurant, Pool",3.9,0.6
+Kataragama,Resort Resort Kataragama,Resort,260,"Restaurant, Pool",3.7,4.7
+Wilpattu,Villa Resort Wilpattu,Hotel,242,"Pool, Wi-Fi, Garden",4.9,1.3
+Knuckles Range,The Grand Palace Knuckles Range,Guesthouse,293,"Wi-Fi, Spa, Garden",4.7,2.7
+Koggala,Hotel Inn Koggala,Hotel,152,"Garden, Pool, Restaurant, Gym",4.4,2.7
+Rakwana,View Inn Rakwana,Guesthouse,61,"Garden, Wi-Fi, Pool, Restaurant",5,4.9
+Kalpitiya,Retreat Inn Kalpitiya,Guesthouse,212,"Restaurant, Spa, Garden, Gym",4.3,4.6
+Horana,View House Horana,Guesthouse,50,"Garden, Gym",4,2.9
+Kelaniya,Heritage Palace Kelaniya,Hotel,220,"Gym, Spa, Garden, Restaurant",4.8,0.2
+Vavuniya,View Palace Vavuniya,Guesthouse,98,"Restaurant, Garden",3.6,1.4
+Seeduwa,Hotel Hotel Seeduwa,Guesthouse,280,"Pool, Restaurant",4.1,4
+Talalla,Retreat House Talalla,Hotel,171,"Restaurant, Garden, Pool",3.9,1.2
+Dambulla,Heritage Villa Dambulla,Guesthouse,262,"Pool, Spa, Wi-Fi",4.1,2.2
+Nuwara Eliya,Heritage Villa Nuwara Eliya,Hotel,276,"Restaurant, Spa, Gym, Garden",3.7,1.9
+Kalutara,Hotel Hotel Kalutara,Resort,138,"Garden, Wi-Fi",3.8,4.4
+Gampaha,Lodge Palace Gampaha,Guesthouse,120,"Pool, Garden, Wi-Fi",3.9,3.1
+Wilpattu,Palace House Wilpattu,Resort,284,"Wi-Fi, Spa, Restaurant, Gym",4.5,2.2
+Yala National Park,View House Yala,Guesthouse,88,"Garden, Gym, Wi-Fi",3.8,3.1
+Wattala,Heritage Inn Wattala,Guesthouse,74,"Spa, Garden, Gym",4.5,1.9
+Jaffna,Villa Villa Jaffna,Guesthouse,54,"Garden, Spa, Wi-Fi, Gym",4,0.9
+Jaffna,Hotel Inn Jaffna,Resort,65,"Garden, Gym, Wi-Fi, Spa",5,1.3
+Wattala,The Grand Palace Wattala,Hotel,285,"Wi-Fi, Gym, Restaurant, Spa",4.9,3.4
+Batticaloa,Villa Retreat Batticaloa,Guesthouse,112,"Wi-Fi, Spa, Gym",4.7,2.5
+Nuwara Eliya,Retreat Retreat Nuwara Eliya,Resort,178,"Spa, Garden",3.7,3.1
+Hatton,Palace House Hatton,Guesthouse,283,"Wi-Fi, Gym",4.4,2.1
+Mirissa,Hotel House Mirissa,Guesthouse,289,"Restaurant, Pool, Spa, Wi-Fi",4.3,1.9
+Denagama,The Grand Resort Denagama,Resort,50,"Restaurant, Gym, Garden, Wi-Fi",4.6,3
+Chilaw,The Grand Resort Chilaw,Guesthouse,141,"Garden, Gym",3.7,2
+Gampola,Retreat Palace Gampola,Hotel,77,"Garden, Gym, Spa, Restaurant",4.2,2.3
+Pinnawala,Retreat Palace Pinnawala,Guesthouse,164,"Pool, Garden, Gym",5,3.5
+Polonnaruwa,Villa House Polonnaruwa,Guesthouse,209,"Wi-Fi, Garden, Spa, Pool",3.7,4.7
+Gampola,The Grand House Gampola,Hotel,260,"Wi-Fi, Garden, Restaurant",4.6,0.4
+Pelmadulla,Villa Inn Pelmadulla,Hotel,219,"Restaurant, Spa, Pool",5,0.1
+Minuwangoda,Lodge Palace Minuwangoda,Guesthouse,162,"Garden, Pool, Gym",3.5,2.3
+Batticaloa,Lodge Villa Batticaloa,Resort,296,"Spa, Restaurant",4.3,1.4
+Colombo,Villa Villa Colombo,Guesthouse,208,"Pool, Wi-Fi",3.7,2.1
+Beruwala,Resort Inn Beruwala,Hotel,176,"Spa, Restaurant, Garden, Pool",4.5,2.1
+Wattegama,Villa Palace Wattegama,Resort,162,"Restaurant, Wi-Fi, Spa, Pool",3.9,0.7
+Kataragama,Palace Palace Kataragama,Hotel,67,"Restaurant, Gym, Spa",3.7,4.5
+Denagama,Palace Hotel Denagama,Resort,208,"Restaurant, Gym",4.7,2.7
+Beliatta,Retreat Palace Beliatta,Guesthouse,170,"Restaurant, Spa, Pool, Garden",3.6,1.2
+Kandy,Retreat Retreat Kandy,Resort,59,"Spa, Restaurant, Pool, Wi-Fi",4.1,3.9
+Katunayake,Villa House Katunayake,Hotel,239,"Gym, Restaurant, Pool, Garden",4.9,0.6
+Pinnawala,The Grand Inn Pinnawala,Hotel,111,"Wi-Fi, Restaurant, Pool, Garden",4.6,4
+Kadugannawa,Palace House Kadugannawa,Hotel,179,"Wi-Fi, Spa, Pool",3.7,0.3
+Ginigathhena,Heritage Hotel Ginigathhena,Hotel,268,"Garden, Wi-Fi, Spa",4.5,1.3
+Embilipitiya,Palace House Embilipitiya,Hotel,113,"Spa, Wi-Fi",5,4.4
+Katunayake,View Resort Katunayake,Hotel,125,"Wi-Fi, Restaurant, Spa",4.5,2.3
+Udawalawe,Retreat Hotel Udawalawe,Hotel,266,"Gym, Spa, Restaurant, Pool",4.4,4.1
+Yala National Park,View Hotel Yala,Guesthouse,231,"Pool, Restaurant, Spa, Gym",3.6,4.1
+Wattala,Palace Resort Wattala,Guesthouse,261,"Wi-Fi, Pool",4.6,3.3
+Minuwangoda,Retreat Resort Minuwangoda,Guesthouse,151,"Restaurant, Garden",4.6,1.5
+Piliyandala,The Grand Retreat Piliyandala,Hotel,136,"Garden, Restaurant",3.5,0.1
+Kalpitiya,Hotel Retreat Kalpitiya,Hotel,180,"Restaurant, Wi-Fi, Gym",4.4,0.8
+Tangalle,View Retreat Tangalle,Guesthouse,89,"Restaurant, Garden, Pool",4.8,4.4
+Warakapola,Villa House Warakapola,Guesthouse,279,"Wi-Fi, Restaurant, Pool",3.6,3.5
+Knuckles Range,Retreat Villa Knuckles Range,Resort,72,"Gym, Garden, Wi-Fi, Restaurant",4,4.3
+Kandy,Resort Villa Kandy,Hotel,100,"Garden, Spa",4.6,3.4
+Ginigathhena,Resort Retreat Ginigathhena,Hotel,75,"Gym, Garden, Wi-Fi",4.6,2.9
+Ginigathhena,Heritage Villa Ginigathhena,Hotel,151,"Restaurant, Spa, Pool",4.8,0.8
+Talalla,Lodge Retreat Talalla,Resort,175,"Restaurant, Garden, Wi-Fi",4.4,4.8
+Katunayake,View Retreat Katunayake,Guesthouse,277,"Restaurant, Gym, Spa",4.4,3.3
+Negombo,The Grand Retreat Negombo,Hotel,133,"Gym, Wi-Fi, Garden",4,3
+Deniyaya,View Hotel Deniyaya,Hotel,88,"Gym, Pool",4,1.9
+Denagama,Palace Resort Denagama,Hotel,252,"Pool, Restaurant, Gym, Wi-Fi",3.8,1.6
+Negombo,Hotel Inn Negombo,Hotel,80,"Spa, Restaurant",4.1,2.9
+Anuradhapura,Hotel Retreat Anuradhapura,Guesthouse,236,"Restaurant, Spa, Pool, Garden",4.1,2.8
+Maskeliya,Heritage Inn Maskeliya,Resort,52,"Garden, Gym, Wi-Fi",3.7,0.9
+Horton Plains,Heritage Resort Horton Plains,Guesthouse,50,"Garden, Wi-Fi",4,4.3
+Kataragama,View Palace Kataragama,Guesthouse,223,"Gym, Wi-Fi",4.4,4.1
+Minuwangoda,Resort House Minuwangoda,Guesthouse,76,"Gym, Wi-Fi, Restaurant, Spa",3.7,0.6
+Kurunegala,Retreat Resort Kurunegala,Resort,128,"Garden, Spa, Restaurant, Pool",5,4.7
+Talalla,Lodge Hotel Talalla,Guesthouse,199,"Gym, Garden, Restaurant, Pool",3.5,3.6
+Nawalapitiya,The Grand Hotel Nawalapitiya,Guesthouse,59,"Gym, Pool, Spa",4.1,0.3
+Dambulla,Resort Palace Dambulla,Guesthouse,252,"Restaurant, Wi-Fi, Garden, Spa",5,2.6
+Tangalle,Hotel Villa Tangalle,Hotel,253,"Spa, Pool",3.7,2.3
+Koggala,View Hotel Koggala,Hotel,300,"Restaurant, Pool, Wi-Fi",4,2.6
+Galle,The Grand Resort Galle,Hotel,218,"Restaurant, Gym, Garden",4.8,1.1
+Negombo,Heritage House Negombo,Hotel,171,"Garden, Restaurant",4.9,0.9
+Vavuniya,Resort Hotel Vavuniya,Hotel,157,"Wi-Fi, Gym",4.7,2.6
+Matale,Villa Hotel Matale,Resort,251,"Gym, Spa",4.4,4
+Unawatuna,Palace Hotel Unawatuna,Guesthouse,238,"Spa, Pool, Restaurant",4.8,1.3
+Sigiriya,Villa House Sigiriya,Hotel,86,"Gym, Spa",4.7,4.5
+Mount Lavinia,Palace Villa Mount Lavinia,Resort,229,"Spa, Garden, Restaurant, Wi-Fi",4.6,2.1
+Katunayake,Hotel Inn Katunayake,Guesthouse,206,"Garden, Wi-Fi",4.9,4.6
+Hatton,Heritage Resort Hatton,Hotel,136,"Pool, Garden",3.7,0.2
+Rakwana,Hotel Palace Rakwana,Resort,267,"Restaurant, Spa, Garden",4.3,0.9
+Wattegama,Hotel Hotel Wattegama,Guesthouse,284,"Wi-Fi, Gym",3.8,2.3
+Kadugannawa,Heritage House Kadugannawa,Hotel,148,"Gym, Garden",3.6,1.6
+Katunayake,Palace House Katunayake,Guesthouse,297,"Spa, Gym, Restaurant",4.4,0.3
+Ginigathhena,View Resort Ginigathhena,Hotel,256,"Garden, Pool, Wi-Fi, Gym",4.5,3.4
+Nawalapitiya,Palace Palace Nawalapitiya,Hotel,159,"Restaurant, Spa",4.3,4.9
+Polonnaruwa,Hotel Palace Polonnaruwa,Guesthouse,83,"Restaurant, Pool",3.7,3.4
+Tangalle,The Grand Hotel Tangalle,Resort,197,"Restaurant, Garden, Wi-Fi, Pool",4.7,3.2
+Mount Lavinia,Hotel Villa Mount Lavinia,Guesthouse,132,"Restaurant, Wi-Fi, Spa, Garden",4.6,0.2
+Polonnaruwa,Heritage Villa Polonnaruwa,Resort,144,"Pool, Wi-Fi, Spa",4.8,0.2
+Kadugannawa,Palace Hotel Kadugannawa,Hotel,270,"Restaurant, Spa, Garden",3.8,1.9
+Ella Rock,The Grand House Ella,Resort,86,"Gym, Wi-Fi",4.9,4.3
+Horton Plains,Retreat Palace Horton Plains,Hotel,144,"Spa, Wi-Fi, Garden",4.1,3.5
+Polonnaruwa,View Retreat Polonnaruwa,Hotel,176,"Gym, Spa, Garden, Wi-Fi",4.3,3
+Sigiriya,Villa Hotel Sigiriya,Guesthouse,264,"Gym, Pool, Restaurant, Spa",4,1.1
+Pinnawala,Hotel Hotel Pinnawala,Guesthouse,255,"Gym, Pool, Restaurant",4.7,0.1
+Sigiriya,Villa Hotel Sigiriya,Guesthouse,148,"Gym, Pool, Garden, Spa",4.1,3.7
+Beruwala,Palace Inn Beruwala,Resort,56,"Spa, Gym",3.8,2.8
+Sigiriya,Resort Palace Sigiriya,Guesthouse,105,"Spa, Gym",4.7,1
+Jaffna,Heritage House Jaffna,Hotel,274,"Wi-Fi, Pool, Restaurant, Gym",4.8,2.4
+Mirigama,Hotel Hotel Mirigama,Hotel,240,"Restaurant, Spa, Wi-Fi, Gym",3.8,0.1
+Colombo,The Grand Resort Colombo,Hotel,78,"Pool, Gym, Garden, Restaurant",4.6,0.2
+Beliatta,Palace House Beliatta,Hotel,188,"Restaurant, Gym, Wi-Fi, Pool",4.7,2.8
+Horton Plains,The Grand House Horton Plains,Resort,160,"Restaurant, Wi-Fi",4.9,1.7
+Galle,View Palace Galle,Guesthouse,169,"Gym, Pool, Wi-Fi",4.6,1.8
+Embilipitiya,View Inn Embilipitiya,Hotel,180,"Gym, Restaurant, Pool",3.6,2
+Katunayake,Villa Inn Katunayake,Guesthouse,290,"Garden, Wi-Fi",4.1,1.1
+Melsiripura,View Resort Melsiripura,Hotel,181,"Wi-Fi, Restaurant, Pool",5,2.3
+Habarana,Heritage Palace Habarana,Resort,299,"Wi-Fi, Spa",3.8,3
+Denagama,View Resort Denagama,Hotel,134,"Spa, Garden, Pool, Wi-Fi",4,4.4
+Kandy,The Grand Inn Kandy,Hotel,258,"Garden, Wi-Fi, Gym",4.9,2.3
+Pelmadulla,The Grand House Pelmadulla,Hotel,97,"Wi-Fi, Spa, Gym, Pool",4.2,1.2
+Ambalantota,Hotel Palace Ambalantota,Resort,91,"Garden, Restaurant, Wi-Fi",4.9,4.3
+Koggala,Palace Palace Koggala,Resort,155,"Pool, Gym, Restaurant",3.5,4.3
+Colombo,Villa Hotel Colombo,Hotel,285,"Pool, Restaurant",4.9,3.1
+Yala National Park,Heritage Palace Yala,Guesthouse,287,"Spa, Wi-Fi, Restaurant",3.8,0.2
+Ambalantota,Retreat Resort Ambalantota,Hotel,299,"Garden, Gym, Wi-Fi",4.2,2.2
+Bentota,The Grand Hotel Bentota,Hotel,235,"Wi-Fi, Restaurant, Pool, Garden",4.4,2.2
+Melsiripura,Villa Resort Melsiripura,Resort,137,"Spa, Wi-Fi, Gym",4,0.9
+Deniyaya,Heritage Retreat Deniyaya,Resort,168,"Garden, Gym, Restaurant, Pool",4,2.7
+Matale,Hotel Palace Matale,Guesthouse,97,"Garden, Gym, Restaurant",3.9,1.2
+Gampola,View Inn Gampola,Guesthouse,136,"Garden, Restaurant, Spa, Wi-Fi",4.6,3.1
+Nuwara Eliya,The Grand House Nuwara Eliya,Hotel,127,"Wi-Fi, Restaurant, Spa, Gym",3.7,0.7
+Vavuniya,Lodge Villa Vavuniya,Guesthouse,93,"Restaurant, Wi-Fi, Spa",4.4,3.2
+Pelmadulla,The Grand Hotel Pelmadulla,Guesthouse,239,"Spa, Restaurant, Wi-Fi, Gym",3.6,5
+Polonnaruwa,View Villa Polonnaruwa,Guesthouse,222,"Garden, Restaurant, Wi-Fi, Gym",3.6,1.7
+Deniyaya,The Grand House Deniyaya,Resort,230,"Wi-Fi, Gym, Pool",4.8,2.9
+Galewela,Hotel House Galewela,Resort,61,"Pool, Restaurant, Spa, Garden",4.2,3
+Colombo,Palace Inn Colombo,Hotel,281,"Garden, Wi-Fi",4.6,0.6
+Puttalam,Lodge Hotel Puttalam,Hotel,70,"Spa, Pool, Restaurant, Gym",4.1,2.5
+Ambalantota,View Villa Ambalantota,Resort,80,"Gym, Spa, Garden",4.3,4.6
+Nuwara Eliya,View House Nuwara Eliya,Guesthouse,85,"Wi-Fi, Garden",5,5
+Kadugannawa,Heritage Palace Kadugannawa,Hotel,214,"Gym, Pool",3.9,3.9
+Dickoya,The Grand Resort Dickoya,Guesthouse,227,"Pool, Restaurant, Wi-Fi",4.3,3.6
+Dehiwala,Retreat House Dehiwala,Resort,144,"Restaurant, Garden, Gym, Wi-Fi",4.3,2.2
+Kelaniya,Palace Hotel Kelaniya,Resort,77,"Restaurant, Garden",4.5,4.9
+Horana,Hotel Resort Horana,Hotel,258,"Gym, Spa, Wi-Fi",4.3,4.6
+Warakapola,Heritage Villa Warakapola,Guesthouse,205,"Garden, Gym, Pool",3.6,2.1
+Ambalantota,Lodge House Ambalantota,Resort,256,"Wi-Fi, Pool, Gym",4.9,3.6
+Kitulgala,Villa Hotel Kitulgala,Hotel,102,"Restaurant, Spa, Gym, Wi-Fi",4.6,0.5
+Minuwangoda,Resort Palace Minuwangoda,Resort,227,"Wi-Fi, Restaurant, Garden",4.1,4.7
+Udawalawe,Villa Villa Udawalawe,Hotel,203,"Gym, Spa, Restaurant",4.7,4.9
+Melsiripura,Resort Villa Melsiripura,Hotel,147,"Wi-Fi, Restaurant, Pool, Spa",4.3,1.2
+Hatton,Resort Villa Hatton,Guesthouse,273,"Pool, Gym, Garden, Wi-Fi",4.3,2.1
+Kelaniya,View Inn Kelaniya,Resort,282,"Pool, Wi-Fi, Garden, Restaurant",3.6,3.8
+Gampola,Resort Retreat Gampola,Hotel,238,"Wi-Fi, Spa, Gym",4.2,4.8
+Unawatuna,Retreat Villa Unawatuna,Hotel,52,"Spa, Garden, Gym, Pool",3.9,4.7
+Katunayake,Palace Resort Katunayake,Guesthouse,228,"Garden, Spa, Pool",4.2,3.3
+Talalla,View House Talalla,Resort,151,"Garden, Gym",4.7,3
+Beliatta,Heritage House Beliatta,Guesthouse,295,"Restaurant, Pool, Gym, Spa",4.5,3.2
+Tangalle,Retreat Resort Tangalle,Guesthouse,170,"Pool, Wi-Fi",4.6,4
+Deniyaya,Retreat Retreat Deniyaya,Hotel,126,"Gym, Spa, Restaurant",5,3.1
+Ella Rock,The Grand Retreat Ella,Guesthouse,230,"Garden, Wi-Fi, Restaurant",3.9,3
+Haputale,Heritage House Haputale,Resort,83,"Spa, Restaurant, Pool, Gym",3.6,0.4
+Gampola,View Palace Gampola,Resort,238,"Wi-Fi, Garden",4.2,3.2
+Matale,View Inn Matale,Resort,128,"Spa, Restaurant, Gym",3.8,2.5
+Horton Plains,The Grand Palace Horton Plains,Resort,279,"Pool, Restaurant, Garden, Spa",3.7,3.1
+Matale,Resort Inn Matale,Guesthouse,203,"Restaurant, Gym, Pool, Garden",3.6,4.5
+Mirissa,View House Mirissa,Guesthouse,58,"Pool, Spa, Wi-Fi, Gym",4.8,4.4
+Tissamaharama,Retreat Palace Tissamaharama,Guesthouse,92,"Spa, Wi-Fi, Garden",3.5,2.2
+Bentota,Hotel Palace Bentota,Resort,256,"Gym, Spa, Restaurant, Wi-Fi",5,0.7
+Batticaloa,View Hotel Batticaloa,Hotel,181,"Spa, Wi-Fi, Garden",4.5,3.8
+Pinnawala,Retreat Resort Pinnawala,Resort,202,"Restaurant, Wi-Fi",3.8,0.6
+Galewela,Lodge Palace Galewela,Guesthouse,63,"Restaurant, Gym, Spa, Pool",4.8,0.9
+Dehiwala,Retreat Inn Dehiwala,Hotel,255,"Spa, Pool",3.6,3.8
+Vavuniya,Heritage Inn Vavuniya,Resort,79,"Restaurant, Gym, Pool, Garden",4.7,0.6
+Meegama,The Grand Resort Meegama,Resort,156,"Spa, Garden",4.9,1
+Talalla,The Grand Inn Talalla,Guesthouse,194,"Spa, Pool, Garden",4.9,1.5
+Ingiriya,Hotel Palace Ingiriya,Guesthouse,186,"Spa, Gym, Wi-Fi, Garden",4.5,4.7
+Ginigathhena,Heritage House Ginigathhena,Resort,284,"Pool, Restaurant, Garden, Wi-Fi",4.6,2.9
+Beruwala,Heritage Hotel Beruwala,Guesthouse,213,"Wi-Fi, Restaurant",4.8,1.7
+Kurunegala,Lodge Inn Kurunegala,Guesthouse,191,"Restaurant, Spa",4.9,0.9
+Badulla,Resort Resort Badulla,Resort,261,"Pool, Garden, Restaurant",4.7,3.7
+Rakwana,Palace Retreat Rakwana,Resort,116,"Wi-Fi, Restaurant",4.4,4.5
+Melsiripura,View Palace Melsiripura,Resort,110,"Garden, Wi-Fi",3.9,3
+Dikwella,Heritage Villa Dikwella,Guesthouse,222,"Pool, Wi-Fi, Spa, Garden",4.6,0.7
+Knuckles Range,Palace Villa Knuckles Range,Guesthouse,159,"Restaurant, Pool, Gym",4.2,1.6
+Koggala,Heritage House Koggala,Hotel,284,"Spa, Gym, Wi-Fi",5,3.4
+Kandy,Villa Palace Kandy,Hotel,202,"Gym, Spa",3.8,3.3
+Colombo,Resort Villa Colombo,Resort,259,"Gym, Pool, Spa",3.8,3.9
+Ratnapura,Palace Retreat Ratnapura,Guesthouse,158,"Wi-Fi, Garden, Restaurant, Gym",3.8,4.2
+Polonnaruwa,Hotel Palace Polonnaruwa,Guesthouse,201,"Restaurant, Garden, Spa",4.3,1.4
+Ingiriya,Lodge House Ingiriya,Hotel,225,"Gym, Pool",4.2,4.5
+Knuckles Range,Lodge Villa Knuckles Range,Guesthouse,236,"Garden, Pool",3.8,4.4
+Horana,Palace Inn Horana,Guesthouse,87,"Gym, Spa",4.3,1.1
+Matale,Villa Inn Matale,Hotel,265,"Wi-Fi, Gym, Garden",3.9,1.2
+Puttalam,Resort Resort Puttalam,Resort,139,"Gym, Wi-Fi, Spa, Restaurant",4.8,1.2
+Koggala,Resort Hotel Koggala,Guesthouse,181,"Spa, Wi-Fi, Garden, Gym",4.6,0.6
+Pelmadulla,Heritage Palace Pelmadulla,Resort,86,"Spa, Pool, Garden",4.6,1.4
+Kalutara,Hotel Resort Kalutara,Hotel,246,"Restaurant, Garden, Wi-Fi, Spa",4.1,2.3
+Yala National Park,Lodge Resort Yala,Resort,94,"Garden, Wi-Fi, Pool, Restaurant",3.6,2.9
+Kelaniya,Villa Palace Kelaniya,Guesthouse,276,"Garden, Pool",4,3.8
+Haputale,View Retreat Haputale,Guesthouse,96,"Garden, Pool, Gym",3.8,1.9
+Yala,Cinnamon Wild Yala,Safari Lodge,300,"Pool, Restaurant, Wildlife Viewing",4.5,5
+Yala,Elephant Reach,Safari Lodge,200,"Pool, Free WiFi, Restaurant",4.3,10
+Udawalawe,Kulu Safari Lodge,Safari Lodge,180,"Nature Trails, Restaurant, Free WiFi",4.4,8
+Wilpattu,The Rainforest Ecolodge,Eco-Lodge,220,"Restaurant, Wildlife Viewing, Pool",4.2,15
+Minneriya,Minneriya Hotel,Hotel,120,"Restaurant, Free WiFi",4.1,3
+Gal Oya,Gal Oya Lodge,Eco-Lodge,250,"Restaurant, Boat Safari, Wildlife Viewing",4.6,20
+Adam's Peak,Peak Wilderness Resort,Mountain Lodge,80,"Restaurant, Free WiFi, Hiking Trails",4.5,1
+Horton Plains,The Grand Hotel,Hotel,100,"Restaurant, Free WiFi, Hiking Trails",4.3,10
+Knuckles Range,Knuckles Range Eco Resort,Eco Lodge,90,"Nature Trails, Restaurant, Wildlife Viewing",4.2,5
+Diyaluma Falls,Diyaluma Eco Lodge,Eco Lodge,60,"Free WiFi, Restaurant, Nature Trails",4,3
+Nuwara Eliya,Grand Tea Hotel,Hotel,120,"Restaurant, Spa, Free WiFi",4.4,15
+Sinharaja Forest,Sinharaja Eco Lodge,Eco Lodge,150,"Wildlife Viewing, Nature Trails, Restaurant",4.6,12
+Unawatuna,Thaproban Beach House,Beach Resort,120,"Restaurant, Free WiFi, Beach Access",4.5,1
+Mirissa,Sri Sharavi Beach Villas,Luxury Villas,180,"Restaurant, Free WiFi, Pool, Beachfront",4.6,2
+Bentota,Centara Ceysands Resort,Beach Resort,150,"Spa, Pool, Free WiFi, Beach Access",4.4,5
+Nilaveli,Nilaveli Beach Hotel,Hotel,110,"Swimming Pool, Restaurant, Free WiFi",4.2,10
+Tangalle,Anantara Peace Haven Resort,Luxury Resort,200,"Spa, Beachfront, Restaurant, Free WiFi",4.8,3
+Passikudah,Uga Bay Resort,Beach Resort,170,"Beach Access, Restaurant, Free WiFi",4.3,1
