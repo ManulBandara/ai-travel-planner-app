@@ -6,7 +6,7 @@ export const SelectTravelerList = [
   },
   {
     label: "A Couple",
-    icon: "wine-glass-outline",
+    icon: "heart-outline",
     description: "Two travelers in tandem",
   },
   {

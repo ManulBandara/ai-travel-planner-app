@@ -100,7 +100,12 @@ export default function SearchPlace() {
       }}
     >
       <Text
-        style={{ fontFamily: "outfit-bold", fontSize: 35, marginBottom: 10 }}
+        style={{
+          fontFamily: "outfit-bold",
+          fontSize: 35,
+          marginBottom: 10,
+          color: "#333", // Darker title color
+        }}
       >
         Who's Traveling
       </Text>
@@ -133,14 +138,14 @@ export default function SearchPlace() {
         style={{
           padding: 15,
           backgroundColor: selectedOption ? Colors.PRIMARY : "#d3d3d3",
-          borderRadius: 25,
+          borderRadius: 30, // Smoother corner
           marginTop: 20,
           alignItems: "center",
           shadowColor: "#000",
-          shadowOffset: { width: 0, height: 2 },
-          shadowOpacity: 0.2,
-          shadowRadius: 4,
-          elevation: 5,
+          shadowOffset: { width: 0, height: 4 },
+          shadowOpacity: 0.3,
+          shadowRadius: 8,
+          elevation: 6,
         }}
         disabled={!selectedOption}
       >
@@ -148,7 +153,7 @@ export default function SearchPlace() {
           style={{
             color: Colors.WHITE,
             fontFamily: "outfit-medium",
-            fontSize: 17,
+            fontSize: 18,
           }}
         >
           Next
@@ -172,34 +177,34 @@ function OptionCard({ option, isSelected, onSelect, scaleValue }) {
         style={{
           flexDirection: "row",
           alignItems: "center",
-          paddingVertical: 15,
-          paddingHorizontal: 20,
+          paddingVertical: 18,
+          paddingHorizontal: 25,
           backgroundColor: isSelected ? "#e6f7ff" : "#fff",
-          borderRadius: 15,
-          marginBottom: 15,
+          borderRadius: 20, // Round corners
+          marginBottom: 20,
           borderColor: "#ddd",
           borderWidth: 1,
           shadowColor: "#000",
           shadowOffset: { width: 0, height: 2 },
-          shadowOpacity: 0.1,
-          shadowRadius: 4,
-          elevation: 3,
+          shadowOpacity: 0.2,
+          shadowRadius: 5,
+          elevation: 4,
         }}
       >
         <LinearGradient
           colors={isSelected ? ["#FF8C00", "#FF1493"] : ["#888", "#888"]}
           style={{
-            padding: 10,
-            borderRadius: 10,
+            padding: 12,
+            borderRadius: 12, // Rounded gradient
           }}
         >
-          <Ionicons name={option.icon} size={30} color="#fff" />
+          <Ionicons name={option.icon} size={32} color="#fff" />
         </LinearGradient>
         <View style={{ marginLeft: 20 }}>
           <Text
             style={{
               fontFamily: "outfit-medium",
-              fontSize: 18,
+              fontSize: 20,
               color: isSelected ? getSelectedColor(option.label) : "#333",
             }}
           >

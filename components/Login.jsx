@@ -9,7 +9,7 @@ export default function login() {
   return (
     <View>
       <Image
-        source={require("./../assets/images/airobo2.jpg")}
+        source={require("./../assets/images/landing.jpeg")}
         style={{
           width: "100%",
           height: 520,
@@ -41,8 +41,9 @@ export default function login() {
           unique journey!
         </Text>
 
-        <TouchableOpacity style={styles.button}
-            onPress={()=>router.push('auth/sign-in')}
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => router.push("auth/sign-in")}
         >
           <Text
             style={{
